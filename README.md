@@ -38,95 +38,22 @@ ControlNet-ECE570/data/mnist/test/images/*/*.png
  Allows you to play with different components of ddpm training
  ```config/mnist.yaml``` - Config for MNIST dataset
 
-
-<ins>Relevant configuration parameters</ins>
-
-Most parameters are self-explanatory but below I mention couple which are specific to this repo.
-* ```autoencoder_acc_steps``` : For accumulating gradients if image size is too large for larger batch sizes
-* ```save_latents``` : Enable this to save the latents , during inference of autoencoder. That way ddpm training will be faster
-
 ___  
 ## Training
-The repo provides training and inference for Mnist(Unconditional DDPM) and CelebHQ (Unconditional LDM) and ControlNet with both these variations using canny edges.
-
-For working on your own dataset:
-* Create your own config and have the path in config point to images (look at `celebhq.yaml` for guidance)
-* Create your own dataset class which will just collect all the filenames and return the image and its hint in its getitem method. Look at `mnist_dataset.py` or `celeb_dataset.py` for guidance 
+The repo's MNist Colab file provides training and inference for Mnist(Unconditional DDPM) and ControlNet with both these variations using canny edges.
 
 Once the config and dataset is setup:
-* For training and inference of Unconditional DDPM follow [this section](#training-unconditional-ddpm)
-* For training and inference of ControlNet with Unconditional DDPM follow [this section](#training-controlnet-for-unconditional-ddpm)
-* Train the auto encoder on your dataset using [this section](#training-autoencoder-for-ldm)
-* For training and inference of Unconditional LDM follow [this section](#training-unconditional-ldm)
-* For training and inference of ControlNet with Unconditional LDM follow [this section](#training-controlnet-for-unconditional-ldm)
-
-
+For training and inference of Unconditional DDPM and for training and inference of ControlNet with Unconditional DDPM please follow, Colab file codeblocks.
 
 ## Training Unconditional DDPM
-* For training ddpm on mnist,ensure the right path is mentioned in `mnist.yaml`
-* For training ddpm on your own dataset 
-  * Create your own config and have the path point to images (look at celebhq.yaml for guidance)
-  * Create your own dataset class, similar to celeb_dataset.py
-* Call the desired dataset class in training file [here](https://github.com/explainingai-code/ControlNet-PyTorch/blob/main/tools/train_ddpm.py#L40)
-* For training DDPM run ```python -m tools.train_ddpm --config config/mnist.yaml``` for training ddpm with the desire config file
-* For inference run ```python -m tools.sample_ddpm --config config/mnist.yaml``` for generating samples with right config file.
+For training and inference of ddpmon mnist, ensure the right path is mentioned in `mnist.yaml` and simply follow the Colab code blocks.
+
 
 ## Training ControlNet for Unconditional DDPM
-* For training controlnet, ensure the right path is mentioned in `mnist.yaml`
-* For training controlnet with ddpm on your own dataset 
-  * Create your own config and have the path point to images (look at celebhq.yaml for guidance)
-  * Create your own dataset class, similar to celeb_dataset.py
-* Call the desired dataset class in training file [here](https://github.com/explainingai-code/ControlNet-PyTorch/blob/main/tools/train_ddpm_controlnet.py#L40)
-* Ensure ```return_hints``` is passed as True in the dataset class initialization
-* For training controlnet run ```python -m tools.train_ddpm_controlnet --config config/mnist.yaml``` for training controlnet ddpm with the desire config file
-* For inference run ```python -m tools.sample_ddpm_controlnet --config config/mnist.yaml``` for generating ddpm samples using canny hints with right config file.
+For training and inference of ddpmon mnist,ensure the right path is mentioned in `mnist.yaml` and simply follow the Colab code blocks
 
 
-## Training AutoEncoder for LDM
-* For training autoencoder on celebhq,ensure the right path is mentioned in `celebhq.yaml`
-* For training autoencoder on your own dataset 
-  * Create your own config and have the path point to images (look at celebhq.yaml for guidance)
-  * Create your own dataset class, similar to celeb_dataset.py
-* Call the desired dataset class in training file [here](https://github.com/explainingai-code/ControlNet-PyTorch/blob/main/tools/train_vae.py#L49)
-* For training autoencoder run ```python -m tools.train_vae --config config/celebhq.yaml``` for training autoencoder with the desire config file
-* For inference make sure `save_latent` is `True` in the config
-* For inference run ```python -m tools.infer_vae --config config/celebhq.yaml``` for generating reconstructions and saving latents with right config file.
-
-
-## Training Unconditional LDM
-Train the autoencoder first and setup dataset accordingly.
-
-For training unconditional LDM ensure the right dataset is used in `train_ldm_vae.py` [here](https://github.com/explainingai-code/ControlNet-PyTorch/blob/main/tools/train_ldm_vae.py#L43)
-* ```python -m tools.train_ldm_vae --config config/celebhq.yaml``` for training unconditional ldm using right config
-* ```python -m tools.sample_ldm_vae --config config/celebhq.yaml``` for generating images using trained ldm
-
-
-## Training ControlNet for Unconditional LDM
-* For training controlnet with celebhq, ensure the right path is mentioned in `celebhq.yaml`
-* For training controlnet with ldm on your own dataset 
-  * Create your own config and have the path point to images (look at celebhq.yaml for guidance)
-  * Create your own dataset class, similar to celeb_dataset.py
-* Ensure Autoencoder and LDM have already been trained
-* Call the desired dataset class in training file [here](https://github.com/explainingai-code/ControlNet-PyTorch/blob/main/tools/train_ldm_controlnet.py#L43)
-* Ensure ```return_hints``` is passed as True in the dataset class initialization
-* Ensure ```down_sample_factor``` is correctly computed in the model initialization [here](https://github.com/explainingai-code/ControlNet-PyTorch/blob/main/tools/train_ldm_controlnet.py#L60)
-* For training controlnet run ```python -m tools.train_ldm_controlnet --config config/celebhq.yaml``` for training controlnet ldm with the desire config file
-* For inference with controlnet run ```python -m tools.sample_ldm_controlnet --config config/celebhq.yaml``` for generating ldm samples using canny hints with right config file.
-
-
-## Output 
-Outputs will be saved according to the configuration present in yaml files.
-
-For every run a folder of ```task_name``` key in config will be created
-
-During training of autoencoder the following output will be saved 
-* Latest Autoencoder and discriminator checkpoint in ```task_name``` directory
-* Sample reconstructions in ```task_name/vae_autoencoder_samples```
-
-During inference of autoencoder the following output will be saved
-* Reconstructions for random images in  ```task_name```
-* Latents will be save in ```task_name/vae_latent_dir_name``` if mentioned in config
-
+## Output
 During training and inference of unconditional ddpm or ldm following output will be saved:
 * During training we will save the latest checkpoint in ```task_name``` directory
 * During sampling, unconditional sampled image grid for all timesteps in ```task_name/samples/*.png``` . The final decoded generated image will be `x0_0.png`. Images from `x0_999.png` to `x0_1.png` will be latent image predictions of denoising process from T=999 to T=1. Generated Image is at T=0
