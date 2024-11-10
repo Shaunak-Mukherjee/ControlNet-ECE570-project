@@ -13,15 +13,10 @@ Canny Edge Control
 
 ___
 
-This repository implements ControlNet in PyTorch for diffusion models.
-As of now, the repo provides code to do the following:
+This repository implements ControlNet in PyTorch for diffusion models using Google Colab.
 * Training and Inference of Unconditional DDPM on MNIST dataset
 * Training and Inference of ControlNet with DDPM on MNIST using canny edges
-* Training and Inference of Unconditional Latent Diffusion Model on CelebHQ dataset(resized to 128x128 with latent images being 32x32)
-* Training and Inference of ControlNet with Unconditional Latent Diffusion Model on CelebHQ using canny edges
 
-
-For autoencoder of Latent Diffusion Model, I provide training and inference code for vae.
 
 ## Setup
 * Create a new conda environment with python 3.10 then run below commands
@@ -35,11 +30,11 @@ ___
 ## Data Preparation
 ### Mnist
 
-For setting up the mnist dataset follow - https://github.com/explainingai-code/Pytorch-VAE#data-preparation
+For setting up the mnist dataset follow - 
 
 Ensure directory structure is following
 ```
-ControlNet-PyTorch
+ControlNet-ECE570/
     -> data
         -> mnist
             -> train
@@ -48,18 +43,7 @@ ControlNet-PyTorch
             -> test
                 -> images
                     -> *.png
-```
-
-### CelebHQ 
-For setting up on CelebHQ, simply download the images from the official repo of CelebMASK HQ [here](https://github.com/switchablenorms/CelebAMask-HQ?tab=readme-ov-file).
-
-Ensure directory structure is the following
-```
-ControlNet-PyTorch
-    -> data
-        -> CelebAMask-HQ
-            -> CelebA-HQ-img
-                -> *.jpg
+``
 
 ```
 ---
