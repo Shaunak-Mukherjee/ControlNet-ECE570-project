@@ -1,0 +1,4731 @@
+digraph {
+	graph [size="359.55,359.55"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	138281039043360 [label="
+ (1, 3, 128, 128)" fillcolor=darkolivegreen1]
+	138281143280416 -> 138281039044960 [dir=none]
+	138281039044960 [label="input
+ (1, 16, 128, 128)" fillcolor=orange]
+	138281143280416 -> 138281143612368 [dir=none]
+	138281143612368 [label="weight
+ (3, 16, 3, 3)" fillcolor=orange]
+	138281143280416 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:           (3,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143281088 -> 138281143280416
+	138281143281088 -> 138281145307824 [dir=none]
+	138281145307824 [label="self
+ (1, 16, 128, 128)" fillcolor=orange]
+	138281143281088 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143281232 -> 138281143281088
+	138281143281232 -> 138281039043760 [dir=none]
+	138281039043760 [label="input
+ (1, 16, 128, 128)" fillcolor=orange]
+	138281143281232 -> 138281039047760 [dir=none]
+	138281039047760 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143281232 -> 138281039043200 [dir=none]
+	138281039043200 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143281232 -> 138281143611888 [dir=none]
+	138281143611888 [label="weight
+ (16)" fillcolor=orange]
+	138281143281232 [label="NativeGroupNormBackward0
+------------------------
+C      :             16
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143282480 -> 138281143281232
+	138281143282480 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143282288 -> 138281143282480
+	138281143282288 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143275520 -> 138281143282288
+	138281143275520 -> 138281039042800 [dir=none]
+	138281039042800 [label="input
+ (1, 16, 128, 128)" fillcolor=orange]
+	138281143275520 -> 138281143609168 [dir=none]
+	138281143609168 [label="weight
+ (16, 16, 3, 3)" fillcolor=orange]
+	138281143275520 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (16,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143282192 -> 138281143275520
+	138281143282192 -> 138281039042960 [dir=none]
+	138281039042960 [label="self
+ (1, 16, 128, 128)" fillcolor=orange]
+	138281143282192 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143281760 -> 138281143282192
+	138281143281760 -> 138281039042880 [dir=none]
+	138281039042880 [label="input
+ (1, 16, 128, 128)" fillcolor=orange]
+	138281143281760 -> 138281143582000 [dir=none]
+	138281143582000 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143281760 -> 138281143426464 [dir=none]
+	138281143426464 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143281760 -> 138281143607888 [dir=none]
+	138281143607888 [label="weight
+ (16)" fillcolor=orange]
+	138281143281760 [label="NativeGroupNormBackward0
+------------------------
+C      :             16
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143281664 -> 138281143281760
+	138281143281664 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143286272 -> 138281143281664
+	138281143286272 -> 138281039041680 [dir=none]
+	138281039041680 [label="input
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143286272 -> 138281143608448 [dir=none]
+	138281143608448 [label="weight
+ (16, 128, 3, 3)" fillcolor=orange]
+	138281143286272 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (16,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143273984 -> 138281143286272
+	138281143273984 -> 138281039042480 [dir=none]
+	138281039042480 [label="self
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143273984 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143273648 -> 138281143273984
+	138281143273648 -> 138281039041840 [dir=none]
+	138281039041840 [label="input
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143273648 -> 138281148096384 [dir=none]
+	138281148096384 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143273648 -> 138281143425584 [dir=none]
+	138281143425584 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143273648 -> 138281143608848 [dir=none]
+	138281143608848 [label="weight
+ (128)" fillcolor=orange]
+	138281143273648 [label="NativeGroupNormBackward0
+------------------------
+C      :            128
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143273744 -> 138281143273648
+	138281143273744 [label="CatBackward0
+------------
+dim: 1"]
+	138281143273888 -> 138281143273744
+	138281143273888 -> 138281039042160 [dir=none]
+	138281039042160 [label="input
+ (1, 64, 64, 64)" fillcolor=orange]
+	138281143273888 -> 138281143612128 [dir=none]
+	138281143612128 [label="weight
+ (64, 64, 4, 4)" fillcolor=orange]
+	138281143273888 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (64,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (2, 2)
+transposed        :           True
+weight            : [saved tensor]"]
+	138281143278448 -> 138281143273888
+	138281143278448 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143278592 -> 138281143278448
+	138281143278592 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143278160 -> 138281143278592
+	138281143278160 -> 138281039041280 [dir=none]
+	138281039041280 [label="input
+ (1, 64, 64, 64)" fillcolor=orange]
+	138281143278160 -> 138281143607328 [dir=none]
+	138281143607328 [label="weight
+ (64, 64, 3, 3)" fillcolor=orange]
+	138281143278160 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (64,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143278256 -> 138281143278160
+	138281143278256 -> 138281039040000 [dir=none]
+	138281039040000 [label="self
+ (1, 64, 64, 64)" fillcolor=orange]
+	138281143278256 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143278736 -> 138281143278256
+	138281143278736 -> 138281039041440 [dir=none]
+	138281039041440 [label="input
+ (1, 64, 64, 64)" fillcolor=orange]
+	138281143278736 -> 138281039048400 [dir=none]
+	138281039048400 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143278736 -> 138281039048480 [dir=none]
+	138281039048480 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143278736 -> 138281143605168 [dir=none]
+	138281143605168 [label="weight
+ (64)" fillcolor=orange]
+	138281143278736 [label="NativeGroupNormBackward0
+------------------------
+C      :             64
+HxW    :           4096
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143279936 -> 138281143278736
+	138281143279936 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143278688 -> 138281143279936
+	138281143278688 -> 138281039040400 [dir=none]
+	138281039040400 [label="input
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143278688 -> 138281143605088 [dir=none]
+	138281143605088 [label="weight
+ (64, 256, 3, 3)" fillcolor=orange]
+	138281143278688 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (64,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143287424 -> 138281143278688
+	138281143287424 -> 138281039041520 [dir=none]
+	138281039041520 [label="self
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143287424 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143283008 -> 138281143287424
+	138281143283008 -> 138281143798016 [dir=none]
+	138281143798016 [label="input
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143283008 -> 138281039048640 [dir=none]
+	138281039048640 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143283008 -> 138281039048720 [dir=none]
+	138281039048720 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143283008 -> 138281143605408 [dir=none]
+	138281143605408 [label="weight
+ (256)" fillcolor=orange]
+	138281143283008 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           4096
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143280320 -> 138281143283008
+	138281143280320 [label="CatBackward0
+------------
+dim: 1"]
+	138281143286416 -> 138281143280320
+	138281143286416 -> 138281039040800 [dir=none]
+	138281039040800 [label="input
+ (1, 128, 32, 32)" fillcolor=orange]
+	138281143286416 -> 138281143608688 [dir=none]
+	138281143608688 [label="weight
+ (128, 128, 4, 4)" fillcolor=orange]
+	138281143286416 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (2, 2)
+transposed        :           True
+weight            : [saved tensor]"]
+	138281143271584 -> 138281143286416
+	138281143271584 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143287232 -> 138281143271584
+	138281143287232 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143275424 -> 138281143287232
+	138281143275424 -> 138281039039920 [dir=none]
+	138281039039920 [label="input
+ (1, 128, 32, 32)" fillcolor=orange]
+	138281143275424 -> 138281143605568 [dir=none]
+	138281143605568 [label="weight
+ (128, 128, 3, 3)" fillcolor=orange]
+	138281143275424 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143286704 -> 138281143275424
+	138281143286704 -> 138281039039600 [dir=none]
+	138281039039600 [label="self
+ (1, 128, 32, 32)" fillcolor=orange]
+	138281143286704 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143285456 -> 138281143286704
+	138281143285456 -> 138281039040080 [dir=none]
+	138281039040080 [label="input
+ (1, 128, 32, 32)" fillcolor=orange]
+	138281143285456 -> 138281039048960 [dir=none]
+	138281039048960 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143285456 -> 138281039048320 [dir=none]
+	138281039048320 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143285456 -> 138281143606048 [dir=none]
+	138281143606048 [label="weight
+ (128)" fillcolor=orange]
+	138281143285456 [label="NativeGroupNormBackward0
+------------------------
+C      :            128
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143285504 -> 138281143285456
+	138281143285504 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143275664 -> 138281143285504
+	138281143275664 -> 138281039039040 [dir=none]
+	138281039039040 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143275664 -> 138281143605488 [dir=none]
+	138281143605488 [label="weight
+ (128, 512, 3, 3)" fillcolor=orange]
+	138281143275664 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143282576 -> 138281143275664
+	138281143282576 -> 138281039038880 [dir=none]
+	138281039038880 [label="self
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143282576 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143285312 -> 138281143282576
+	138281143285312 -> 138281531322304 [dir=none]
+	138281531322304 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143285312 -> 138281039048000 [dir=none]
+	138281039048000 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143285312 -> 138281039044640 [dir=none]
+	138281039044640 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143285312 -> 138281143604288 [dir=none]
+	138281143604288 [label="weight
+ (512)" fillcolor=orange]
+	138281143285312 [label="NativeGroupNormBackward0
+------------------------
+C      :            512
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143286224 -> 138281143285312
+	138281143286224 [label="CatBackward0
+------------
+dim: 1"]
+	138281143286032 -> 138281143286224
+	138281143286032 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143277632 -> 138281143286032
+	138281143277632 -> 138281039039520 [dir=none]
+	138281039039520 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143277632 -> 138281143603408 [dir=none]
+	138281143603408 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143277632 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143285840 -> 138281143277632
+	138281143285840 -> 138281039039760 [dir=none]
+	138281039039760 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143285840 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143283776 -> 138281143285840
+	138281143283776 -> 138281039039840 [dir=none]
+	138281039039840 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143283776 -> 138281039048560 [dir=none]
+	138281039048560 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143283776 -> 138281039049120 [dir=none]
+	138281039049120 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143283776 -> 138281143603728 [dir=none]
+	138281143603728 [label="weight
+ (256)" fillcolor=orange]
+	138281143283776 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143285600 -> 138281143283776
+	138281143285600 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143280992 -> 138281143285600
+	138281143280992 -> 138281039039440 [dir=none]
+	138281039039440 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143280992 -> 138281143602768 [dir=none]
+	138281143602768 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143280992 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143281616 -> 138281143280992
+	138281143281616 -> 138281039038960 [dir=none]
+	138281039038960 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143281616 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143275232 -> 138281143281616
+	138281143275232 -> 138281039039360 [dir=none]
+	138281039039360 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143275232 -> 138281039048800 [dir=none]
+	138281039048800 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143275232 -> 138281039049280 [dir=none]
+	138281039049280 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143275232 -> 138281143602848 [dir=none]
+	138281143602848 [label="weight
+ (256)" fillcolor=orange]
+	138281143275232 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143275040 -> 138281143275232
+	138281143275040 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143287760 -> 138281143275040
+	138281143287760 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143274128 -> 138281143287760
+	138281143274128 -> 138281039036480 [dir=none]
+	138281039036480 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143274128 -> 138281143603888 [dir=none]
+	138281143603888 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143274128 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143274272 -> 138281143274128
+	138281143274272 -> 138281039038000 [dir=none]
+	138281039038000 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143274272 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143272112 -> 138281143274272
+	138281143272112 -> 138281039038160 [dir=none]
+	138281039038160 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143272112 -> 138281039048880 [dir=none]
+	138281039048880 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143272112 -> 138281039049440 [dir=none]
+	138281039049440 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143272112 -> 138281143604048 [dir=none]
+	138281143604048 [label="weight
+ (256)" fillcolor=orange]
+	138281143272112 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143271680 -> 138281143272112
+	138281143271680 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143286992 -> 138281143271680
+	138281143286992 -> 138281039037120 [dir=none]
+	138281039037120 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143286992 -> 138281143603088 [dir=none]
+	138281143603088 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143286992 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143283104 -> 138281143286992
+	138281143283104 -> 138281039036960 [dir=none]
+	138281039036960 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143283104 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143287088 -> 138281143283104
+	138281143287088 -> 138281039038080 [dir=none]
+	138281039038080 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143287088 -> 138281039049040 [dir=none]
+	138281039049040 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143287088 -> 138281143427264 [dir=none]
+	138281143427264 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143287088 -> 138281143602128 [dir=none]
+	138281143602128 [label="weight
+ (256)" fillcolor=orange]
+	138281143287088 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143287712 -> 138281143287088
+	138281143287712 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143283632 -> 138281143287712
+	138281143283632 -> 138281039037600 [dir=none]
+	138281039037600 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143283632 -> 138281143601248 [dir=none]
+	138281143601248 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143283632 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143283680 -> 138281143283632
+	138281143283680 -> 138281039037840 [dir=none]
+	138281039037840 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143283680 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143475392 -> 138281143283680
+	138281143475392 -> 138281039037920 [dir=none]
+	138281039037920 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143475392 -> 138281039049840 [dir=none]
+	138281039049840 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143475392 -> 138281039049600 [dir=none]
+	138281039049600 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143475392 -> 138281143601008 [dir=none]
+	138281143601008 [label="weight
+ (256)" fillcolor=orange]
+	138281143475392 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143475248 -> 138281143475392
+	138281143475248 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143475008 -> 138281143475248
+	138281143475008 -> 138281039037520 [dir=none]
+	138281039037520 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143475008 -> 138281143600128 [dir=none]
+	138281143600128 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143475008 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143474288 -> 138281143475008
+	138281143474288 -> 138281039037040 [dir=none]
+	138281039037040 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143474288 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143474624 -> 138281143474288
+	138281143474624 -> 138281039037440 [dir=none]
+	138281039037440 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143474624 -> 138281039050000 [dir=none]
+	138281039050000 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143474624 -> 138281039049200 [dir=none]
+	138281039049200 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143474624 -> 138281143600048 [dir=none]
+	138281143600048 [label="weight
+ (256)" fillcolor=orange]
+	138281143474624 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143474432 -> 138281143474624
+	138281143474432 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143474720 -> 138281143474432
+	138281143474720 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143474864 -> 138281143474720
+	138281143474864 -> 138281143613648 [dir=none]
+	138281143613648 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143474864 -> 138281143600608 [dir=none]
+	138281143600608 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143474864 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143474096 -> 138281143474864
+	138281143474096 -> 138281143615168 [dir=none]
+	138281143615168 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143474096 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143473472 -> 138281143474096
+	138281143473472 -> 138281143613248 [dir=none]
+	138281143613248 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143473472 -> 138281039050160 [dir=none]
+	138281039050160 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143473472 -> 138281039049360 [dir=none]
+	138281039049360 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143473472 -> 138281143600528 [dir=none]
+	138281143600528 [label="weight
+ (256)" fillcolor=orange]
+	138281143473472 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143473952 -> 138281143473472
+	138281143473952 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143473856 -> 138281143473952
+	138281143473856 -> 138281143613808 [dir=none]
+	138281143613808 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143473856 -> 138281143599488 [dir=none]
+	138281143599488 [label="weight
+ (256, 512, 3, 3)" fillcolor=orange]
+	138281143473856 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143473376 -> 138281143473856
+	138281143473376 -> 138281143613008 [dir=none]
+	138281143613008 [label="self
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143473376 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143473040 -> 138281143473376
+	138281143473040 -> 138281143613488 [dir=none]
+	138281143613488 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143473040 -> 138281039049680 [dir=none]
+	138281039049680 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143473040 -> 138281039049520 [dir=none]
+	138281039049520 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143473040 -> 138281143599728 [dir=none]
+	138281143599728 [label="weight
+ (512)" fillcolor=orange]
+	138281143473040 [label="NativeGroupNormBackward0
+------------------------
+C      :            512
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143472896 -> 138281143473040
+	138281143472896 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143471888 -> 138281143472896
+	138281143471888 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143472512 -> 138281143471888
+	138281143472512 -> 138281143612528 [dir=none]
+	138281143612528 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143472512 -> 138281143582160 [dir=none]
+	138281143582160 [label="weight
+ (512, 512, 3, 3)" fillcolor=orange]
+	138281143472512 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (512,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143472032 -> 138281143472512
+	138281143472032 -> 138281143614768 [dir=none]
+	138281143614768 [label="self
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143472032 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143472176 -> 138281143472032
+	138281143472176 -> 138281143614928 [dir=none]
+	138281143614928 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143472176 -> 138281039049760 [dir=none]
+	138281039049760 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143472176 -> 138281039050320 [dir=none]
+	138281039050320 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143472176 -> 138281143572400 [dir=none]
+	138281143572400 [label="weight
+ (512)" fillcolor=orange]
+	138281143472176 [label="NativeGroupNormBackward0
+------------------------
+C      :            512
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143472416 -> 138281143472176
+	138281143472416 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143471600 -> 138281143472416
+	138281143471600 -> 138281143615328 [dir=none]
+	138281143615328 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143471600 -> 138281143579520 [dir=none]
+	138281143579520 [label="weight
+ (512, 256, 3, 3)" fillcolor=orange]
+	138281143471600 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (512,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143471264 -> 138281143471600
+	138281143471264 -> 138281143615248 [dir=none]
+	138281143615248 [label="self
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143471264 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143471456 -> 138281143471264
+	138281143471456 -> 138281143612768 [dir=none]
+	138281143612768 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143471456 -> 138281039049920 [dir=none]
+	138281039049920 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143471456 -> 138281039050480 [dir=none]
+	138281039050480 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143471456 -> 138281143578800 [dir=none]
+	138281143578800 [label="weight
+ (256)" fillcolor=orange]
+	138281143471456 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143285216 -> 138281143471456
+	138281143285216 -> 138281143614288 [dir=none]
+	138281143614288 [label="input
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143285216 -> 138281143579440 [dir=none]
+	138281143579440 [label="weight
+ (256, 256, 4, 4)" fillcolor=orange]
+	138281143285216 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (2, 2)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143471024 -> 138281143285216
+	138281143471024 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143470544 -> 138281143471024
+	138281143470544 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143470784 -> 138281143470544
+	138281143470784 -> 138281143611248 [dir=none]
+	138281143611248 [label="input
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143470784 -> 138281143578720 [dir=none]
+	138281143578720 [label="weight
+ (256, 256, 3, 3)" fillcolor=orange]
+	138281143470784 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143470832 -> 138281143470784
+	138281143470832 -> 138281143610368 [dir=none]
+	138281143610368 [label="self
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143470832 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143470400 -> 138281143470832
+	138281143470400 -> 138281143612608 [dir=none]
+	138281143612608 [label="input
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143470400 -> 138281039050720 [dir=none]
+	138281039050720 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143470400 -> 138281039050080 [dir=none]
+	138281039050080 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143470400 -> 138281143577920 [dir=none]
+	138281143577920 [label="weight
+ (256)" fillcolor=orange]
+	138281143470400 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           4096
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143470256 -> 138281143470400
+	138281143470256 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143468432 -> 138281143470256
+	138281143468432 -> 138281143610448 [dir=none]
+	138281143610448 [label="input
+ (1, 128, 64, 64)" fillcolor=orange]
+	138281143468432 -> 138281143577760 [dir=none]
+	138281143577760 [label="weight
+ (256, 128, 3, 3)" fillcolor=orange]
+	138281143468432 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143469776 -> 138281143468432
+	138281143469776 -> 138281143612848 [dir=none]
+	138281143612848 [label="self
+ (1, 128, 64, 64)" fillcolor=orange]
+	138281143469776 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143468240 -> 138281143469776
+	138281143468240 -> 138281143431824 [dir=none]
+	138281143431824 [label="input
+ (1, 128, 64, 64)" fillcolor=orange]
+	138281143468240 -> 138281143198208 [dir=none]
+	138281143198208 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143468240 -> 138281039050240 [dir=none]
+	138281039050240 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143468240 -> 138281143578160 [dir=none]
+	138281143578160 [label="weight
+ (128)" fillcolor=orange]
+	138281143468240 [label="NativeGroupNormBackward0
+------------------------
+C      :            128
+HxW    :           4096
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143286608 -> 138281143468240
+	138281143286608 -> 138281143610208 [dir=none]
+	138281143610208 [label="input
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143286608 -> 138281143578000 [dir=none]
+	138281143578000 [label="weight
+ (128, 128, 4, 4)" fillcolor=orange]
+	138281143286608 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (2, 2)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143470160 -> 138281143286608
+	138281143470160 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143470112 -> 138281143470160
+	138281143470112 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143468576 -> 138281143470112
+	138281143468576 -> 138281143610928 [dir=none]
+	138281143610928 [label="input
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143468576 -> 138281143576560 [dir=none]
+	138281143576560 [label="weight
+ (128, 128, 3, 3)" fillcolor=orange]
+	138281143468576 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143469440 -> 138281143468576
+	138281143469440 -> 138281143611328 [dir=none]
+	138281143611328 [label="self
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143469440 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143469344 -> 138281143469440
+	138281143469344 -> 138281143611488 [dir=none]
+	138281143611488 [label="input
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143469344 -> 138281039051040 [dir=none]
+	138281039051040 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143469344 -> 138281039050880 [dir=none]
+	138281039050880 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143469344 -> 138281143576880 [dir=none]
+	138281143576880 [label="weight
+ (128)" fillcolor=orange]
+	138281143469344 [label="NativeGroupNormBackward0
+------------------------
+C      :            128
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143468720 -> 138281143469344
+	138281143468720 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143469008 -> 138281143468720
+	138281143469008 -> 138281143807936 [dir=none]
+	138281143807936 [label="input
+ (1, 64, 128, 128)" fillcolor=orange]
+	138281143469008 -> 138281143574880 [dir=none]
+	138281143574880 [label="weight
+ (128, 64, 3, 3)" fillcolor=orange]
+	138281143469008 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143468864 -> 138281143469008
+	138281143468864 -> 138281143427584 [dir=none]
+	138281143427584 [label="self
+ (1, 64, 128, 128)" fillcolor=orange]
+	138281143468864 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143473136 -> 138281143468864
+	138281143473136 -> 138281285356976 [dir=none]
+	138281285356976 [label="input
+ (1, 64, 128, 128)" fillcolor=orange]
+	138281143473136 -> 138281039050400 [dir=none]
+	138281039050400 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143473136 -> 138281039051120 [dir=none]
+	138281039051120 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143473136 -> 138281143799776 [dir=none]
+	138281143799776 [label="weight
+ (64)" fillcolor=orange]
+	138281143473136 [label="NativeGroupNormBackward0
+------------------------
+C      :             64
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143273696 -> 138281143473136
+	138281143273696 -> 138284931022528 [dir=none]
+	138284931022528 [label="input
+ (1, 3, 128, 128)" fillcolor=orange]
+	138281143273696 -> 138281143575120 [dir=none]
+	138281143575120 [label="weight
+ (64, 3, 3, 3)" fillcolor=orange]
+	138281143273696 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (64,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (1, 1)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143475632 -> 138281143273696
+	138281143575120 [label="conv_in.weight
+ (64, 3, 3, 3)" fillcolor=lightblue]
+	138281143575120 -> 138281143475632
+	138281143475632 [label=AccumulateGrad]
+	138281143469536 -> 138281143273696
+	138281143574960 [label="conv_in.bias
+ (64)" fillcolor=lightblue]
+	138281143574960 -> 138281143469536
+	138281143469536 [label=AccumulateGrad]
+	138281143469488 -> 138281143473136
+	138281143799776 [label="downs.0.resnet_conv_first.0.0.weight
+ (64)" fillcolor=lightblue]
+	138281143799776 -> 138281143469488
+	138281143469488 [label=AccumulateGrad]
+	138281143473232 -> 138281143473136
+	138281529434224 [label="downs.0.resnet_conv_first.0.0.bias
+ (64)" fillcolor=lightblue]
+	138281529434224 -> 138281143473232
+	138281143473232 [label=AccumulateGrad]
+	138281143468816 -> 138281143469008
+	138281143574880 [label="downs.0.resnet_conv_first.0.2.weight
+ (128, 64, 3, 3)" fillcolor=lightblue]
+	138281143574880 -> 138281143468816
+	138281143468816 [label=AccumulateGrad]
+	138281143468960 -> 138281143469008
+	138281143576320 [label="downs.0.resnet_conv_first.0.2.bias
+ (128)" fillcolor=lightblue]
+	138281143576320 -> 138281143468960
+	138281143468960 [label=AccumulateGrad]
+	138281143468912 -> 138281143468720
+	138281143468912 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143473280 -> 138281143468912
+	138281143473280 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143475584 -> 138281143473280
+	138281143475584 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 128)
+start         :                   0
+step          :                   1"]
+	138281143469632 -> 138281143475584
+	138281143469632 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 128)
+start         :                   0
+step          :                   1"]
+	138281143475920 -> 138281143469632
+	138281143475920 -> 138281143610848 [dir=none]
+	138281143610848 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143475920 -> 138281285263392 [dir=none]
+	138281285263392 [label="mat2
+ (128, 128)" fillcolor=orange]
+	138281143475920 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 128)
+mat2_sym_strides:       (1, 128)"]
+	138281143476688 -> 138281143475920
+	138281143576800 [label="downs.0.t_emb_layers.0.1.bias
+ (128)" fillcolor=lightblue]
+	138281143576800 -> 138281143476688
+	138281143476688 [label=AccumulateGrad]
+	138281143476064 -> 138281143475920
+	138281143476064 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143476064 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143476064
+	138281143476784 -> 138281143202848 [dir=none]
+	138281143202848 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143476784 -> 138281039051280 [dir=none]
+	138281039051280 [label="mat2
+ (128, 128)" fillcolor=orange]
+	138281143476784 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 128)
+mat2_sym_strides:       (1, 128)"]
+	138281143482784 -> 138281143476784
+	138281143427984 [label="t_proj.2.bias
+ (128)" fillcolor=lightblue]
+	138281143427984 -> 138281143482784
+	138281143482784 [label=AccumulateGrad]
+	138281143482736 -> 138281143476784
+	138281143482736 -> 138284931015168 [dir=none]
+	138284931015168 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143482736 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143482544 -> 138281143482736
+	138281143482544 -> 138281143611008 [dir=none]
+	138281143611008 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143482544 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:             ()
+mat2            :           None
+mat2_sym_sizes  :     (128, 128)
+mat2_sym_strides:       (1, 128)"]
+	138281143482208 -> 138281143482544
+	138281143797936 [label="t_proj.0.bias
+ (128)" fillcolor=lightblue]
+	138281143797936 -> 138281143482208
+	138281143482208 [label=AccumulateGrad]
+	138281143482496 -> 138281143482544
+	138281143482496 [label=TBackward0]
+	138281143480624 -> 138281143482496
+	138281143809616 [label="t_proj.0.weight
+ (128, 128)" fillcolor=lightblue]
+	138281143809616 -> 138281143480624
+	138281143480624 [label=AccumulateGrad]
+	138281143476928 -> 138281143476784
+	138281143476928 [label=TBackward0]
+	138281143480480 -> 138281143476928
+	138281277842720 [label="t_proj.2.weight
+ (128, 128)" fillcolor=lightblue]
+	138281277842720 -> 138281143480480
+	138281143480480 [label=AccumulateGrad]
+	138281143475968 -> 138281143475920
+	138281143475968 [label=TBackward0]
+	138281143482592 -> 138281143475968
+	138281143576640 [label="downs.0.t_emb_layers.0.1.weight
+ (128, 128)" fillcolor=lightblue]
+	138281143576640 -> 138281143482592
+	138281143482592 [label=AccumulateGrad]
+	138281143469200 -> 138281143469344
+	138281143576880 [label="downs.0.resnet_conv_second.0.0.weight
+ (128)" fillcolor=lightblue]
+	138281143576880 -> 138281143469200
+	138281143469200 [label=AccumulateGrad]
+	138281143469296 -> 138281143469344
+	138281143576960 [label="downs.0.resnet_conv_second.0.0.bias
+ (128)" fillcolor=lightblue]
+	138281143576960 -> 138281143469296
+	138281143469296 [label=AccumulateGrad]
+	138281143469104 -> 138281143468576
+	138281143576560 [label="downs.0.resnet_conv_second.0.2.weight
+ (128, 128, 3, 3)" fillcolor=lightblue]
+	138281143576560 -> 138281143469104
+	138281143469104 [label=AccumulateGrad]
+	138281143468672 -> 138281143468576
+	138281143576480 [label="downs.0.resnet_conv_second.0.2.bias
+ (128)" fillcolor=lightblue]
+	138281143576480 -> 138281143468672
+	138281143468672 [label=AccumulateGrad]
+	138281143470304 -> 138281143470112
+	138281143470304 -> 138281285356976 [dir=none]
+	138281285356976 [label="input
+ (1, 64, 128, 128)" fillcolor=orange]
+	138281143470304 -> 138281143577520 [dir=none]
+	138281143577520 [label="weight
+ (128, 64, 1, 1)" fillcolor=orange]
+	138281143470304 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143273696 -> 138281143470304
+	138281143469056 -> 138281143470304
+	138281143577520 [label="downs.0.residual_input_conv.0.weight
+ (128, 64, 1, 1)" fillcolor=lightblue]
+	138281143577520 -> 138281143469056
+	138281143469056 [label=AccumulateGrad]
+	138281143469392 -> 138281143470304
+	138281143577360 [label="downs.0.residual_input_conv.0.bias
+ (128)" fillcolor=lightblue]
+	138281143577360 -> 138281143469392
+	138281143469392 [label=AccumulateGrad]
+	138281143469968 -> 138281143470160
+	138281143469968 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (1, 128, 16384)"]
+	138281143468768 -> 138281143469968
+	138281143468768 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143469584 -> 138281143468768
+	138281143469584 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143468624 -> 138281143469584
+	138281143468624 [label="ViewBackward0
+----------------------------
+self_sym_sizes: (16384, 128)"]
+	138281143482688 -> 138281143468624
+	138281143482688 -> 138281143609808 [dir=none]
+	138281143609808 [label="mat1
+ (16384, 128)" fillcolor=orange]
+	138281143482688 -> 138281039050560 [dir=none]
+	138281039050560 [label="mat2
+ (128, 128)" fillcolor=orange]
+	138281143482688 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :   (16384, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 128)
+mat2_sym_strides:       (1, 128)"]
+	138281143479088 -> 138281143482688
+	138281143577680 [label="downs.0.attentions.0.out_proj.bias
+ (128)" fillcolor=lightblue]
+	138281143577680 -> 138281143479088
+	138281143479088 [label=AccumulateGrad]
+	138281143478560 -> 138281143482688
+	138281143478560 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (16384, 4, 32)"]
+	138281143482640 -> 138281143478560
+	138281143482640 [label=CloneBackward0]
+	138281143480384 -> 138281143482640
+	138281143480384 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143480528 -> 138281143480384
+	138281143480528 -> 138281143611648 [dir=none]
+	138281143611648 [label="mat2
+ (4, 16384, 32)" fillcolor=orange]
+	138281143480528 -> 138281143609888 [dir=none]
+	138281143609888 [label="self
+ (4, 16384, 16384)" fillcolor=orange]
+	138281143480528 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143482256 -> 138281143480528
+	138281143482256 -> 138281530413424 [dir=none]
+	138281530413424 [label="result
+ (4, 16384, 16384)" fillcolor=orange]
+	138281143482256 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143476496 -> 138281143482256
+	138281143476496 -> 138281143611728 [dir=none]
+	138281143611728 [label="mat2
+ (4, 32, 16384)" fillcolor=orange]
+	138281143476496 -> 138281143610528 [dir=none]
+	138281143610528 [label="self
+ (4, 16384, 32)" fillcolor=orange]
+	138281143476496 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143476592 -> 138281143476496
+	138281143476592 -> 138281143795776 [dir=none]
+	138281143795776 [label="other
+ ()" fillcolor=orange]
+	138281143476592 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143476256 -> 138281143476592
+	138281143476256 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143476352 -> 138281143476256
+	138281143476352 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (16384, 1, 128)"]
+	138281143476448 -> 138281143476352
+	138281143476448 [label="SelectBackward0
+----------------------------------
+dim           :                  0
+index         :                  0
+self_sym_sizes: (3, 16384, 1, 128)"]
+	138281143475824 -> 138281143476448
+	138281143475824 [label=CloneBackward0]
+	138281143477120 -> 138281143475824
+	138281143477120 [label="SqueezeBackward1
+-------------------------------------
+dim           :  18446744073709551614
+self_sym_sizes: (3, 16384, 1, 1, 128)"]
+	138281143477024 -> 138281143477120
+	138281143477024 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143477456 -> 138281143477024
+	138281143477456 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143477552 -> 138281143477456
+	138281143477552 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (16384, 1, 384)"]
+	138281143477744 -> 138281143477552
+	138281143477744 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143477888 -> 138281143477744
+	138281143477888 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (16384, 384)"]
+	138281143478128 -> 138281143477888
+	138281143478128 -> 138284931057840 [dir=none]
+	138284931057840 [label="mat2
+ (128, 384)" fillcolor=orange]
+	138281143478128 -> 138281143798096 [dir=none]
+	138281143798096 [label="self
+ (16384, 128)" fillcolor=orange]
+	138281143478128 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 384)
+mat2_sym_strides:       (1, 128)
+self            : [saved tensor]
+self_sym_sizes  :   (16384, 128)
+self_sym_strides:     (1, 16384)"]
+	138281143478320 -> 138281143478128
+	138281143478320 [label="ReshapeAliasBackward0
+-------------------------------
+self_sym_sizes: (16384, 1, 128)"]
+	138281143478464 -> 138281143478320
+	138281143478464 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143484320 -> 138281143478464
+	138281143484320 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143484272 -> 138281143484320
+	138281143484272 -> 138281143611088 [dir=none]
+	138281143611088 [label="input
+ (1, 128, 16384)" fillcolor=orange]
+	138281143484272 -> 138281039051440 [dir=none]
+	138281039051440 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143484272 -> 138281039051360 [dir=none]
+	138281039051360 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143484272 -> 138281143576400 [dir=none]
+	138281143576400 [label="weight
+ (128)" fillcolor=orange]
+	138281143484272 [label="NativeGroupNormBackward0
+------------------------
+C      :            128
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143483984 -> 138281143484272
+	138281143483984 [label="ViewBackward0
+----------------------------------
+self_sym_sizes: (1, 128, 128, 128)"]
+	138281143470112 -> 138281143483984
+	138281143484128 -> 138281143484272
+	138281143576400 [label="downs.0.attention_norms.0.weight
+ (128)" fillcolor=lightblue]
+	138281143576400 -> 138281143484128
+	138281143484128 [label=AccumulateGrad]
+	138281143484176 -> 138281143484272
+	138281143576240 [label="downs.0.attention_norms.0.bias
+ (128)" fillcolor=lightblue]
+	138281143576240 -> 138281143484176
+	138281143484176 [label=AccumulateGrad]
+	138281143478176 -> 138281143478128
+	138281143478176 [label=TBackward0]
+	138281143478368 -> 138281143478176
+	138281143577120 [label="downs.0.attentions.0.in_proj_weight
+ (384, 128)" fillcolor=lightblue]
+	138281143577120 -> 138281143478368
+	138281143478368 [label=AccumulateGrad]
+	138281143477840 -> 138281143477744
+	138281143577440 [label="downs.0.attentions.0.in_proj_bias
+ (384)" fillcolor=lightblue]
+	138281143577440 -> 138281143477840
+	138281143477840 [label=AccumulateGrad]
+	138281143476544 -> 138281143476496
+	138281143476544 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143476160 -> 138281143476544
+	138281143476160 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143477072 -> 138281143476160
+	138281143477072 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (16384, 1, 128)"]
+	138281143477360 -> 138281143477072
+	138281143477360 [label="SelectBackward0
+----------------------------------
+dim           :                  0
+index         :                  1
+self_sym_sizes: (3, 16384, 1, 128)"]
+	138281143475824 -> 138281143477360
+	138281143482304 -> 138281143480528
+	138281143482304 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143476400 -> 138281143482304
+	138281143476400 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (16384, 1, 128)"]
+	138281143477408 -> 138281143476400
+	138281143477408 [label="SelectBackward0
+----------------------------------
+dim           :                  0
+index         :                  2
+self_sym_sizes: (3, 16384, 1, 128)"]
+	138281143475824 -> 138281143477408
+	138281143470064 -> 138281143482688
+	138281143470064 [label=TBackward0]
+	138281143480576 -> 138281143470064
+	138281143576720 [label="downs.0.attentions.0.out_proj.weight
+ (128, 128)" fillcolor=lightblue]
+	138281143576720 -> 138281143480576
+	138281143480576 [label=AccumulateGrad]
+	138281143469872 -> 138281143286608
+	138281143578000 [label="downs.0.down_sample_conv.weight
+ (128, 128, 4, 4)" fillcolor=lightblue]
+	138281143578000 -> 138281143469872
+	138281143469872 [label=AccumulateGrad]
+	138281143470208 -> 138281143286608
+	138281143578080 [label="downs.0.down_sample_conv.bias
+ (128)" fillcolor=lightblue]
+	138281143578080 -> 138281143470208
+	138281143470208 [label=AccumulateGrad]
+	138281143468096 -> 138281143468240
+	138281143578160 [label="downs.1.resnet_conv_first.0.0.weight
+ (128)" fillcolor=lightblue]
+	138281143578160 -> 138281143468096
+	138281143468096 [label=AccumulateGrad]
+	138281143468192 -> 138281143468240
+	138281143578240 [label="downs.1.resnet_conv_first.0.0.bias
+ (128)" fillcolor=lightblue]
+	138281143578240 -> 138281143468192
+	138281143468192 [label=AccumulateGrad]
+	138281143468528 -> 138281143468432
+	138281143577760 [label="downs.1.resnet_conv_first.0.2.weight
+ (256, 128, 3, 3)" fillcolor=lightblue]
+	138281143577760 -> 138281143468528
+	138281143468528 [label=AccumulateGrad]
+	138281143468480 -> 138281143468432
+	138281143577280 [label="downs.1.resnet_conv_first.0.2.bias
+ (256)" fillcolor=lightblue]
+	138281143577280 -> 138281143468480
+	138281143468480 [label=AccumulateGrad]
+	138281143468384 -> 138281143470256
+	138281143468384 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143469728 -> 138281143468384
+	138281143469728 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143469920 -> 138281143469728
+	138281143469920 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143473184 -> 138281143469920
+	138281143473184 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143476736 -> 138281143473184
+	138281143476736 -> 138281143611168 [dir=none]
+	138281143611168 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143476736 -> 138281039050640 [dir=none]
+	138281039050640 [label="mat2
+ (128, 256)" fillcolor=orange]
+	138281143476736 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 256)
+mat2_sym_strides:       (1, 128)"]
+	138281143480432 -> 138281143476736
+	138281143577040 [label="downs.1.t_emb_layers.0.1.bias
+ (256)" fillcolor=lightblue]
+	138281143577040 -> 138281143480432
+	138281143480432 [label=AccumulateGrad]
+	138281143476832 -> 138281143476736
+	138281143476832 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143476832 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143476832
+	138281143468288 -> 138281143476736
+	138281143468288 [label=TBackward0]
+	138281143476304 -> 138281143468288
+	138281143577200 [label="downs.1.t_emb_layers.0.1.weight
+ (256, 128)" fillcolor=lightblue]
+	138281143577200 -> 138281143476304
+	138281143476304 [label=AccumulateGrad]
+	138281143470448 -> 138281143470400
+	138281143577920 [label="downs.1.resnet_conv_second.0.0.weight
+ (256)" fillcolor=lightblue]
+	138281143577920 -> 138281143470448
+	138281143470448 [label=AccumulateGrad]
+	138281143471168 -> 138281143470400
+	138281143578400 [label="downs.1.resnet_conv_second.0.0.bias
+ (256)" fillcolor=lightblue]
+	138281143578400 -> 138281143471168
+	138281143471168 [label=AccumulateGrad]
+	138281143470880 -> 138281143470784
+	138281143578720 [label="downs.1.resnet_conv_second.0.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143578720 -> 138281143470880
+	138281143470880 [label=AccumulateGrad]
+	138281143470736 -> 138281143470784
+	138281143578560 [label="downs.1.resnet_conv_second.0.2.bias
+ (256)" fillcolor=lightblue]
+	138281143578560 -> 138281143470736
+	138281143470736 [label=AccumulateGrad]
+	138281143470928 -> 138281143470544
+	138281143470928 -> 138281143431824 [dir=none]
+	138281143431824 [label="input
+ (1, 128, 64, 64)" fillcolor=orange]
+	138281143470928 -> 138281143579040 [dir=none]
+	138281143579040 [label="weight
+ (256, 128, 1, 1)" fillcolor=orange]
+	138281143470928 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143286608 -> 138281143470928
+	138281143469824 -> 138281143470928
+	138281143579040 [label="downs.1.residual_input_conv.0.weight
+ (256, 128, 1, 1)" fillcolor=lightblue]
+	138281143579040 -> 138281143469824
+	138281143469824 [label=AccumulateGrad]
+	138281143470496 -> 138281143470928
+	138281143578960 [label="downs.1.residual_input_conv.0.bias
+ (256)" fillcolor=lightblue]
+	138281143578960 -> 138281143470496
+	138281143470496 [label=AccumulateGrad]
+	138281143470592 -> 138281143471024
+	138281143470592 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1, 256, 4096)"]
+	138281143468336 -> 138281143470592
+	138281143468336 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143470016 -> 138281143468336
+	138281143470016 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143475488 -> 138281143470016
+	138281143475488 [label="ViewBackward0
+---------------------------
+self_sym_sizes: (4096, 256)"]
+	138281143479568 -> 138281143475488
+	138281143479568 -> 138281143614448 [dir=none]
+	138281143614448 [label="mat1
+ (4096, 256)" fillcolor=orange]
+	138281143479568 -> 138281039050800 [dir=none]
+	138281039050800 [label="mat2
+ (256, 256)" fillcolor=orange]
+	138281143479568 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :    (4096, 256)
+mat1_sym_strides:       (256, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (256, 256)
+mat2_sym_strides:       (1, 256)"]
+	138281143477696 -> 138281143479568
+	138281143579280 [label="downs.1.attentions.0.out_proj.bias
+ (256)" fillcolor=lightblue]
+	138281143579280 -> 138281143477696
+	138281143477696 [label=AccumulateGrad]
+	138281143477312 -> 138281143479568
+	138281143477312 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (4096, 4, 64)"]
+	138281143476112 -> 138281143477312
+	138281143476112 [label=CloneBackward0]
+	138281143484368 -> 138281143476112
+	138281143484368 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143478080 -> 138281143484368
+	138281143478080 -> 138281143613088 [dir=none]
+	138281143613088 [label="mat2
+ (4, 4096, 64)" fillcolor=orange]
+	138281143478080 -> 138281143614368 [dir=none]
+	138281143614368 [label="self
+ (4, 4096, 4096)" fillcolor=orange]
+	138281143478080 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143483936 -> 138281143478080
+	138281143483936 -> 138281039051200 [dir=none]
+	138281039051200 [label="result
+ (4, 4096, 4096)" fillcolor=orange]
+	138281143483936 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143483888 -> 138281143483936
+	138281143483888 -> 138281143612448 [dir=none]
+	138281143612448 [label="mat2
+ (4, 64, 4096)" fillcolor=orange]
+	138281143483888 -> 138281143614208 [dir=none]
+	138281143614208 [label="self
+ (4, 4096, 64)" fillcolor=orange]
+	138281143483888 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143483696 -> 138281143483888
+	138281143483696 -> 138281039051680 [dir=none]
+	138281039051680 [label="other
+ ()" fillcolor=orange]
+	138281143483696 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143483552 -> 138281143483696
+	138281143483552 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143483456 -> 138281143483552
+	138281143483456 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (4096, 1, 256)"]
+	138281143483360 -> 138281143483456
+	138281143483360 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 0
+self_sym_sizes: (3, 4096, 1, 256)"]
+	138281143483264 -> 138281143483360
+	138281143483264 [label=CloneBackward0]
+	138281143483168 -> 138281143483264
+	138281143483168 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes: (3, 4096, 1, 1, 256)"]
+	138281143483072 -> 138281143483168
+	138281143483072 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143482928 -> 138281143483072
+	138281143482928 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143482880 -> 138281143482928
+	138281143482880 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (4096, 1, 768)"]
+	138281143482112 -> 138281143482880
+	138281143482112 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143482016 -> 138281143482112
+	138281143482016 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (4096, 768)"]
+	138281143481872 -> 138281143482016
+	138281143481872 -> 138281039051920 [dir=none]
+	138281039051920 [label="mat2
+ (256, 768)" fillcolor=orange]
+	138281143481872 -> 138281039050960 [dir=none]
+	138281039050960 [label="self
+ (4096, 256)" fillcolor=orange]
+	138281143481872 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (256, 768)
+mat2_sym_strides:       (1, 256)
+self            : [saved tensor]
+self_sym_sizes  :    (4096, 256)
+self_sym_strides:      (1, 4096)"]
+	138281143481776 -> 138281143481872
+	138281143481776 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (4096, 1, 256)"]
+	138281143481632 -> 138281143481776
+	138281143481632 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143481536 -> 138281143481632
+	138281143481536 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143481440 -> 138281143481536
+	138281143481440 -> 138281143427824 [dir=none]
+	138281143427824 [label="input
+ (1, 256, 4096)" fillcolor=orange]
+	138281143481440 -> 138281039051520 [dir=none]
+	138281039051520 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143481440 -> 138281039051840 [dir=none]
+	138281039051840 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143481440 -> 138281143578640 [dir=none]
+	138281143578640 [label="weight
+ (256)" fillcolor=orange]
+	138281143481440 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           4096
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143481344 -> 138281143481440
+	138281143481344 [label="ViewBackward0
+--------------------------------
+self_sym_sizes: (1, 256, 64, 64)"]
+	138281143470544 -> 138281143481344
+	138281143481392 -> 138281143481440
+	138281143578640 [label="downs.1.attention_norms.0.weight
+ (256)" fillcolor=lightblue]
+	138281143578640 -> 138281143481392
+	138281143481392 [label=AccumulateGrad]
+	138281143481728 -> 138281143481440
+	138281143578480 [label="downs.1.attention_norms.0.bias
+ (256)" fillcolor=lightblue]
+	138281143578480 -> 138281143481728
+	138281143481728 [label=AccumulateGrad]
+	138281143481824 -> 138281143481872
+	138281143481824 [label=TBackward0]
+	138281143481488 -> 138281143481824
+	138281143578320 [label="downs.1.attentions.0.in_proj_weight
+ (768, 256)" fillcolor=lightblue]
+	138281143578320 -> 138281143481488
+	138281143481488 [label=AccumulateGrad]
+	138281143482064 -> 138281143482112
+	138281143578880 [label="downs.1.attentions.0.in_proj_bias
+ (768)" fillcolor=lightblue]
+	138281143578880 -> 138281143482064
+	138281143482064 [label=AccumulateGrad]
+	138281143483744 -> 138281143483888
+	138281143483744 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143483312 -> 138281143483744
+	138281143483312 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143483216 -> 138281143483312
+	138281143483216 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (4096, 1, 256)"]
+	138281143482976 -> 138281143483216
+	138281143482976 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 1
+self_sym_sizes: (3, 4096, 1, 256)"]
+	138281143483264 -> 138281143482976
+	138281143483792 -> 138281143478080
+	138281143483792 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143483408 -> 138281143483792
+	138281143483408 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (4096, 1, 256)"]
+	138281143483024 -> 138281143483408
+	138281143483024 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 2
+self_sym_sizes: (3, 4096, 1, 256)"]
+	138281143483264 -> 138281143483024
+	138281143470976 -> 138281143479568
+	138281143470976 [label=TBackward0]
+	138281143478032 -> 138281143470976
+	138281143579200 [label="downs.1.attentions.0.out_proj.weight
+ (256, 256)" fillcolor=lightblue]
+	138281143579200 -> 138281143478032
+	138281143478032 [label=AccumulateGrad]
+	138281143471120 -> 138281143285216
+	138281143579440 [label="downs.1.down_sample_conv.weight
+ (256, 256, 4, 4)" fillcolor=lightblue]
+	138281143579440 -> 138281143471120
+	138281143471120 [label=AccumulateGrad]
+	138281143471216 -> 138281143285216
+	138281143579680 [label="downs.1.down_sample_conv.bias
+ (256)" fillcolor=lightblue]
+	138281143579680 -> 138281143471216
+	138281143471216 [label=AccumulateGrad]
+	138281143471648 -> 138281143471456
+	138281143578800 [label="downs.2.resnet_conv_first.0.0.weight
+ (256)" fillcolor=lightblue]
+	138281143578800 -> 138281143471648
+	138281143471648 [label=AccumulateGrad]
+	138281143471744 -> 138281143471456
+	138281143579760 [label="downs.2.resnet_conv_first.0.0.bias
+ (256)" fillcolor=lightblue]
+	138281143579760 -> 138281143471744
+	138281143471744 [label=AccumulateGrad]
+	138281143471312 -> 138281143471600
+	138281143579520 [label="downs.2.resnet_conv_first.0.2.weight
+ (512, 256, 3, 3)" fillcolor=lightblue]
+	138281143579520 -> 138281143471312
+	138281143471312 [label=AccumulateGrad]
+	138281143471360 -> 138281143471600
+	138281143579360 [label="downs.2.resnet_conv_first.0.2.bias
+ (512)" fillcolor=lightblue]
+	138281143579360 -> 138281143471360
+	138281143471360 [label=AccumulateGrad]
+	138281143471792 -> 138281143472416
+	138281143471792 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143471408 -> 138281143471792
+	138281143471408 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143470640 -> 138281143471408
+	138281143470640 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 512)
+start         :                   0
+step          :                   1"]
+	138281143468144 -> 138281143470640
+	138281143468144 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 512)
+start         :                   0
+step          :                   1"]
+	138281143482448 -> 138281143468144
+	138281143482448 -> 138281143615408 [dir=none]
+	138281143615408 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143482448 -> 138281039052080 [dir=none]
+	138281039052080 [label="mat2
+ (128, 512)" fillcolor=orange]
+	138281143482448 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 512)
+mat2_sym_strides:       (1, 128)"]
+	138281143477984 -> 138281143482448
+	138281143572320 [label="downs.2.t_emb_layers.0.1.bias
+ (512)" fillcolor=lightblue]
+	138281143572320 -> 138281143477984
+	138281143477984 [label=AccumulateGrad]
+	138281143478800 -> 138281143482448
+	138281143478800 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143478800 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143478800
+	138281143471552 -> 138281143482448
+	138281143471552 [label=TBackward0]
+	138281143483504 -> 138281143471552
+	138281143579840 [label="downs.2.t_emb_layers.0.1.weight
+ (512, 128)" fillcolor=lightblue]
+	138281143579840 -> 138281143483504
+	138281143483504 [label=AccumulateGrad]
+	138281143472464 -> 138281143472176
+	138281143572400 [label="downs.2.resnet_conv_second.0.0.weight
+ (512)" fillcolor=lightblue]
+	138281143572400 -> 138281143472464
+	138281143472464 [label=AccumulateGrad]
+	138281143471984 -> 138281143472176
+	138281143572480 [label="downs.2.resnet_conv_second.0.0.bias
+ (512)" fillcolor=lightblue]
+	138281143572480 -> 138281143471984
+	138281143471984 [label=AccumulateGrad]
+	138281143472128 -> 138281143472512
+	138281143582160 [label="downs.2.resnet_conv_second.0.2.weight
+ (512, 512, 3, 3)" fillcolor=lightblue]
+	138281143582160 -> 138281143472128
+	138281143472128 [label=AccumulateGrad]
+	138281143472272 -> 138281143472512
+	138281143582320 [label="downs.2.resnet_conv_second.0.2.bias
+ (512)" fillcolor=lightblue]
+	138281143582320 -> 138281143472272
+	138281143472272 [label=AccumulateGrad]
+	138281143472560 -> 138281143471888
+	138281143472560 -> 138281143612768 [dir=none]
+	138281143612768 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143472560 -> 138281143599168 [dir=none]
+	138281143599168 [label="weight
+ (512, 256, 1, 1)" fillcolor=orange]
+	138281143472560 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (512,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143285216 -> 138281143472560
+	138281143472368 -> 138281143472560
+	138281143599168 [label="downs.2.residual_input_conv.0.weight
+ (512, 256, 1, 1)" fillcolor=lightblue]
+	138281143599168 -> 138281143472368
+	138281143472368 [label=AccumulateGrad]
+	138281143472224 -> 138281143472560
+	138281143599568 [label="downs.2.residual_input_conv.0.bias
+ (512)" fillcolor=lightblue]
+	138281143599568 -> 138281143472224
+	138281143472224 [label=AccumulateGrad]
+	138281143472608 -> 138281143472896
+	138281143472608 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1, 512, 1024)"]
+	138281143472656 -> 138281143472608
+	138281143472656 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143470688 -> 138281143472656
+	138281143470688 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143469152 -> 138281143470688
+	138281143469152 [label="ViewBackward0
+---------------------------
+self_sym_sizes: (1024, 512)"]
+	138281143477600 -> 138281143469152
+	138281143477600 -> 138281143613408 [dir=none]
+	138281143613408 [label="mat1
+ (1024, 512)" fillcolor=orange]
+	138281143477600 -> 138281039052000 [dir=none]
+	138281039052000 [label="mat2
+ (512, 512)" fillcolor=orange]
+	138281143477600 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :    (1024, 512)
+mat1_sym_strides:       (512, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (512, 512)
+mat2_sym_strides:       (1, 512)"]
+	138281143483120 -> 138281143477600
+	138281143599248 [label="downs.2.attentions.0.out_proj.bias
+ (512)" fillcolor=lightblue]
+	138281143599248 -> 138281143483120
+	138281143483120 [label=AccumulateGrad]
+	138281143483840 -> 138281143477600
+	138281143483840 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 4, 128)"]
+	138281143482832 -> 138281143483840
+	138281143482832 [label=CloneBackward0]
+	138281143481968 -> 138281143482832
+	138281143481968 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143481152 -> 138281143481968
+	138281143481152 -> 138281143614128 [dir=none]
+	138281143614128 [label="mat2
+ (4, 1024, 128)" fillcolor=orange]
+	138281143481152 -> 138281143613728 [dir=none]
+	138281143613728 [label="self
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143481152 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143481680 -> 138281143481152
+	138281143481680 -> 138281039052400 [dir=none]
+	138281039052400 [label="result
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143481680 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143481104 -> 138281143481680
+	138281143481104 -> 138281143615088 [dir=none]
+	138281143615088 [label="mat2
+ (4, 128, 1024)" fillcolor=orange]
+	138281143481104 -> 138281143613888 [dir=none]
+	138281143613888 [label="self
+ (4, 1024, 128)" fillcolor=orange]
+	138281143481104 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143481008 -> 138281143481104
+	138281143481008 -> 138281039052320 [dir=none]
+	138281039052320 [label="other
+ ()" fillcolor=orange]
+	138281143481008 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143480864 -> 138281143481008
+	138281143480864 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143480768 -> 138281143480864
+	138281143480768 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 512)"]
+	138281143480672 -> 138281143480768
+	138281143480672 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 0
+self_sym_sizes: (3, 1024, 1, 512)"]
+	138281143480288 -> 138281143480672
+	138281143480288 [label=CloneBackward0]
+	138281143480192 -> 138281143480288
+	138281143480192 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes: (3, 1024, 1, 1, 512)"]
+	138281143480096 -> 138281143480192
+	138281143480096 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143479952 -> 138281143480096
+	138281143479952 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143479904 -> 138281143479952
+	138281143479904 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1024, 1, 1536)"]
+	138281143479760 -> 138281143479904
+	138281143479760 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143479664 -> 138281143479760
+	138281143479664 [label="UnsafeViewBackward0
+----------------------------
+self_sym_sizes: (1024, 1536)"]
+	138281143479424 -> 138281143479664
+	138281143479424 -> 138281039052640 [dir=none]
+	138281039052640 [label="mat2
+ (512, 1536)" fillcolor=orange]
+	138281143479424 -> 138281039052160 [dir=none]
+	138281039052160 [label="self
+ (1024, 512)" fillcolor=orange]
+	138281143479424 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :    (512, 1536)
+mat2_sym_strides:       (1, 512)
+self            : [saved tensor]
+self_sym_sizes  :    (1024, 512)
+self_sym_strides:      (1, 1024)"]
+	138281143479328 -> 138281143479424
+	138281143479328 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 512)"]
+	138281143479184 -> 138281143479328
+	138281143479184 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143479040 -> 138281143479184
+	138281143479040 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143478896 -> 138281143479040
+	138281143478896 -> 138281143615008 [dir=none]
+	138281143615008 [label="input
+ (1, 512, 1024)" fillcolor=orange]
+	138281143478896 -> 138281039052560 [dir=none]
+	138281039052560 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143478896 -> 138281039052240 [dir=none]
+	138281039052240 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143478896 -> 138281143572560 [dir=none]
+	138281143572560 [label="weight
+ (512)" fillcolor=orange]
+	138281143478896 [label="NativeGroupNormBackward0
+------------------------
+C      :            512
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143478752 -> 138281143478896
+	138281143478752 [label="ViewBackward0
+--------------------------------
+self_sym_sizes: (1, 512, 32, 32)"]
+	138281143471888 -> 138281143478752
+	138281143478848 -> 138281143478896
+	138281143572560 [label="downs.2.attention_norms.0.weight
+ (512)" fillcolor=lightblue]
+	138281143572560 -> 138281143478848
+	138281143478848 [label=AccumulateGrad]
+	138281143479280 -> 138281143478896
+	138281143582400 [label="downs.2.attention_norms.0.bias
+ (512)" fillcolor=lightblue]
+	138281143582400 -> 138281143479280
+	138281143479280 [label=AccumulateGrad]
+	138281143479376 -> 138281143479424
+	138281143479376 [label=TBackward0]
+	138281143478992 -> 138281143479376
+	138281143582480 [label="downs.2.attentions.0.in_proj_weight
+ (1536, 512)" fillcolor=lightblue]
+	138281143582480 -> 138281143478992
+	138281143478992 [label=AccumulateGrad]
+	138281143479712 -> 138281143479760
+	138281143582560 [label="downs.2.attentions.0.in_proj_bias
+ (1536)" fillcolor=lightblue]
+	138281143582560 -> 138281143479712
+	138281143479712 [label=AccumulateGrad]
+	138281143481056 -> 138281143481104
+	138281143481056 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143480336 -> 138281143481056
+	138281143480336 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143480240 -> 138281143480336
+	138281143480240 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 512)"]
+	138281143480000 -> 138281143480240
+	138281143480000 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 1
+self_sym_sizes: (3, 1024, 1, 512)"]
+	138281143480288 -> 138281143480000
+	138281143481296 -> 138281143481152
+	138281143481296 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143480720 -> 138281143481296
+	138281143480720 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 512)"]
+	138281143480048 -> 138281143480720
+	138281143480048 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 2
+self_sym_sizes: (3, 1024, 1, 512)"]
+	138281143480288 -> 138281143480048
+	138281143471840 -> 138281143477600
+	138281143471840 [label=TBackward0]
+	138281143481920 -> 138281143471840
+	138281143582640 [label="downs.2.attentions.0.out_proj.weight
+ (512, 512)" fillcolor=lightblue]
+	138281143582640 -> 138281143481920
+	138281143481920 [label=AccumulateGrad]
+	138281143472992 -> 138281143473040
+	138281143599728 [label="mids.0.resnet_conv_first.0.0.weight
+ (512)" fillcolor=lightblue]
+	138281143599728 -> 138281143472992
+	138281143472992 [label=AccumulateGrad]
+	138281143472800 -> 138281143473040
+	138281143599808 [label="mids.0.resnet_conv_first.0.0.bias
+ (512)" fillcolor=lightblue]
+	138281143599808 -> 138281143472800
+	138281143472800 [label=AccumulateGrad]
+	138281143474048 -> 138281143473856
+	138281143599488 [label="mids.0.resnet_conv_first.0.2.weight
+ (256, 512, 3, 3)" fillcolor=lightblue]
+	138281143599488 -> 138281143474048
+	138281143474048 [label=AccumulateGrad]
+	138281143473808 -> 138281143473856
+	138281143599408 [label="mids.0.resnet_conv_first.0.2.bias
+ (256)" fillcolor=lightblue]
+	138281143599408 -> 138281143473808
+	138281143473808 [label=AccumulateGrad]
+	138281143473760 -> 138281143473952
+	138281143473760 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143472848 -> 138281143473760
+	138281143472848 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143471936 -> 138281143472848
+	138281143471936 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143471072 -> 138281143471936
+	138281143471072 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143482160 -> 138281143471072
+	138281143482160 -> 138281143614608 [dir=none]
+	138281143614608 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143482160 -> 138281039233168 [dir=none]
+	138281039233168 [label="mat2
+ (128, 256)" fillcolor=orange]
+	138281143482160 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 256)
+mat2_sym_strides:       (1, 128)"]
+	138281143481200 -> 138281143482160
+	138284931058160 [label="mids.0.t_emb_layers.0.1.bias
+ (256)" fillcolor=lightblue]
+	138284931058160 -> 138281143481200
+	138281143481200 [label=AccumulateGrad]
+	138281143481584 -> 138281143482160
+	138281143481584 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143481584 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143481584
+	138281143473088 -> 138281143482160
+	138281143473088 [label=TBackward0]
+	138281143479808 -> 138281143473088
+	138281531315424 [label="mids.0.t_emb_layers.0.1.weight
+ (256, 128)" fillcolor=lightblue]
+	138281531315424 -> 138281143479808
+	138281143479808 [label=AccumulateGrad]
+	138281143473568 -> 138281143473472
+	138281143600528 [label="mids.0.resnet_conv_second.0.0.weight
+ (256)" fillcolor=lightblue]
+	138281143600528 -> 138281143473568
+	138281143473568 [label=AccumulateGrad]
+	138281143473424 -> 138281143473472
+	138281143600688 [label="mids.0.resnet_conv_second.0.0.bias
+ (256)" fillcolor=lightblue]
+	138281143600688 -> 138281143473424
+	138281143473424 [label=AccumulateGrad]
+	138281143475056 -> 138281143474864
+	138281143600608 [label="mids.0.resnet_conv_second.0.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143600608 -> 138281143475056
+	138281143475056 [label=AccumulateGrad]
+	138281143474816 -> 138281143474864
+	138281143600448 [label="mids.0.resnet_conv_second.0.2.bias
+ (256)" fillcolor=lightblue]
+	138281143600448 -> 138281143474816
+	138281143474816 [label=AccumulateGrad]
+	138281143474768 -> 138281143474720
+	138281143474768 -> 138281143613488 [dir=none]
+	138281143613488 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143474768 -> 138281143601328 [dir=none]
+	138281143601328 [label="weight
+ (256, 512, 1, 1)" fillcolor=orange]
+	138281143474768 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143472896 -> 138281143474768
+	138281143473712 -> 138281143474768
+	138281143601328 [label="mids.0.residual_input_conv.0.weight
+ (256, 512, 1, 1)" fillcolor=lightblue]
+	138281143601328 -> 138281143473712
+	138281143473712 [label=AccumulateGrad]
+	138281143473616 -> 138281143474768
+	138281143601968 [label="mids.0.residual_input_conv.0.bias
+ (256)" fillcolor=lightblue]
+	138281143601968 -> 138281143473616
+	138281143473616 [label=AccumulateGrad]
+	138281143474960 -> 138281143474432
+	138281143474960 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1, 256, 1024)"]
+	138281143473904 -> 138281143474960
+	138281143473904 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143472704 -> 138281143473904
+	138281143472704 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143478416 -> 138281143472704
+	138281143478416 [label="ViewBackward0
+---------------------------
+self_sym_sizes: (1024, 256)"]
+	138281143480816 -> 138281143478416
+	138281143480816 -> 138281039037280 [dir=none]
+	138281039037280 [label="mat1
+ (1024, 256)" fillcolor=orange]
+	138281143480816 -> 138281039233088 [dir=none]
+	138281039233088 [label="mat2
+ (256, 256)" fillcolor=orange]
+	138281143480816 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :    (1024, 256)
+mat1_sym_strides:       (256, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (256, 256)
+mat2_sym_strides:       (1, 256)"]
+	138281143480144 -> 138281143480816
+	138281143601568 [label="mids.0.attentions.0.out_proj.bias
+ (256)" fillcolor=lightblue]
+	138281143601568 -> 138281143480144
+	138281143480144 [label=AccumulateGrad]
+	138281143481248 -> 138281143480816
+	138281143481248 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (1024, 4, 64)"]
+	138281143479856 -> 138281143481248
+	138281143479856 [label=CloneBackward0]
+	138281143479616 -> 138281143479856
+	138281143479616 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143478656 -> 138281143479616
+	138281143478656 -> 138281039036720 [dir=none]
+	138281039036720 [label="mat2
+ (4, 1024, 64)" fillcolor=orange]
+	138281143478656 -> 138281039037200 [dir=none]
+	138281039037200 [label="self
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143478656 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143479232 -> 138281143478656
+	138281143479232 -> 138281039233488 [dir=none]
+	138281039233488 [label="result
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143479232 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143478608 -> 138281143479232
+	138281143478608 -> 138281039036640 [dir=none]
+	138281039036640 [label="mat2
+ (4, 64, 1024)" fillcolor=orange]
+	138281143478608 -> 138281039036880 [dir=none]
+	138281039036880 [label="self
+ (4, 1024, 64)" fillcolor=orange]
+	138281143478608 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143695200 -> 138281143478608
+	138281143695200 -> 138281039233568 [dir=none]
+	138281039233568 [label="other
+ ()" fillcolor=orange]
+	138281143695200 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143681376 -> 138281143695200
+	138281143681376 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143695728 -> 138281143681376
+	138281143695728 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143695920 -> 138281143695728
+	138281143695920 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 0
+self_sym_sizes: (3, 1024, 1, 256)"]
+	138281143695344 -> 138281143695920
+	138281143695344 [label=CloneBackward0]
+	138281143695872 -> 138281143695344
+	138281143695872 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes: (3, 1024, 1, 1, 256)"]
+	138281143695248 -> 138281143695872
+	138281143695248 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143681616 -> 138281143695248
+	138281143681616 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143681664 -> 138281143681616
+	138281143681664 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 768)"]
+	138281143695440 -> 138281143681664
+	138281143695440 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143690304 -> 138281143695440
+	138281143690304 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (1024, 768)"]
+	138281143695392 -> 138281143690304
+	138281143695392 -> 138281039233728 [dir=none]
+	138281039233728 [label="mat2
+ (256, 768)" fillcolor=orange]
+	138281143695392 -> 138281039233248 [dir=none]
+	138281039233248 [label="self
+ (1024, 256)" fillcolor=orange]
+	138281143695392 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (256, 768)
+mat2_sym_strides:       (1, 256)
+self            : [saved tensor]
+self_sym_sizes  :    (1024, 256)
+self_sym_strides:      (1, 1024)"]
+	138281143690208 -> 138281143695392
+	138281143690208 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143685120 -> 138281143690208
+	138281143685120 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143697168 -> 138281143685120
+	138281143697168 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143690448 -> 138281143697168
+	138281143690448 -> 138281143612048 [dir=none]
+	138281143612048 [label="input
+ (1, 256, 1024)" fillcolor=orange]
+	138281143690448 -> 138281039233968 [dir=none]
+	138281039233968 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143690448 -> 138281039233648 [dir=none]
+	138281039233648 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143690448 -> 138281143600928 [dir=none]
+	138281143600928 [label="weight
+ (256)" fillcolor=orange]
+	138281143690448 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143697360 -> 138281143690448
+	138281143697360 [label="ViewBackward0
+--------------------------------
+self_sym_sizes: (1, 256, 32, 32)"]
+	138281143474720 -> 138281143697360
+	138281143697024 -> 138281143690448
+	138281143600928 [label="mids.0.attention_norms.0.weight
+ (256)" fillcolor=lightblue]
+	138281143600928 -> 138281143697024
+	138281143697024 [label=AccumulateGrad]
+	138281143685168 -> 138281143690448
+	138281143600848 [label="mids.0.attention_norms.0.bias
+ (256)" fillcolor=lightblue]
+	138281143600848 -> 138281143685168
+	138281143685168 [label=AccumulateGrad]
+	138281143690688 -> 138281143695392
+	138281143690688 [label=TBackward0]
+	138281143696976 -> 138281143690688
+	138281143601488 [label="mids.0.attentions.0.in_proj_weight
+ (768, 256)" fillcolor=lightblue]
+	138281143601488 -> 138281143696976
+	138281143696976 [label=AccumulateGrad]
+	138281143690400 -> 138281143695440
+	138281143601648 [label="mids.0.attentions.0.in_proj_bias
+ (768)" fillcolor=lightblue]
+	138281143601648 -> 138281143690400
+	138281143690400 [label=AccumulateGrad]
+	138281143681520 -> 138281143478608
+	138281143681520 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143696016 -> 138281143681520
+	138281143696016 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143695632 -> 138281143696016
+	138281143695632 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143681328 -> 138281143695632
+	138281143681328 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 1
+self_sym_sizes: (3, 1024, 1, 256)"]
+	138281143695344 -> 138281143681328
+	138281143478704 -> 138281143478656
+	138281143478704 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143695680 -> 138281143478704
+	138281143695680 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143695296 -> 138281143695680
+	138281143695296 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 2
+self_sym_sizes: (3, 1024, 1, 256)"]
+	138281143695344 -> 138281143695296
+	138281143474912 -> 138281143480816
+	138281143474912 [label=TBackward0]
+	138281143479472 -> 138281143474912
+	138281143601728 [label="mids.0.attentions.0.out_proj.weight
+ (256, 256)" fillcolor=lightblue]
+	138281143601728 -> 138281143479472
+	138281143479472 [label=AccumulateGrad]
+	138281143474384 -> 138281143474624
+	138281143600048 [label="mids.0.resnet_conv_first.1.0.weight
+ (256)" fillcolor=lightblue]
+	138281143600048 -> 138281143474384
+	138281143474384 [label=AccumulateGrad]
+	138281143474192 -> 138281143474624
+	138281143600208 [label="mids.0.resnet_conv_first.1.0.bias
+ (256)" fillcolor=lightblue]
+	138281143600208 -> 138281143474192
+	138281143474192 [label=AccumulateGrad]
+	138281143474336 -> 138281143475008
+	138281143600128 [label="mids.0.resnet_conv_first.1.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143600128 -> 138281143474336
+	138281143474336 [label=AccumulateGrad]
+	138281143474672 -> 138281143475008
+	138281143599968 [label="mids.0.resnet_conv_first.1.2.bias
+ (256)" fillcolor=lightblue]
+	138281143599968 -> 138281143474672
+	138281143474672 [label=AccumulateGrad]
+	138281143475104 -> 138281143475248
+	138281143475104 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143474528 -> 138281143475104
+	138281143474528 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143473664 -> 138281143474528
+	138281143473664 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143471504 -> 138281143473664
+	138281143471504 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143483600 -> 138281143471504
+	138281143483600 -> 138281039037760 [dir=none]
+	138281039037760 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143483600 -> 138281039234208 [dir=none]
+	138281039234208 [label="mat2
+ (128, 256)" fillcolor=orange]
+	138281143483600 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 256)
+mat2_sym_strides:       (1, 128)"]
+	138281143480960 -> 138281143483600
+	138281143599888 [label="mids.0.t_emb_layers.1.1.bias
+ (256)" fillcolor=lightblue]
+	138281143599888 -> 138281143480960
+	138281143480960 [label=AccumulateGrad]
+	138281143479136 -> 138281143483600
+	138281143479136 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143479136 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143479136
+	138281143474240 -> 138281143483600
+	138281143474240 [label=TBackward0]
+	138281143695536 -> 138281143474240
+	138281143600288 [label="mids.0.t_emb_layers.1.1.weight
+ (256, 128)" fillcolor=lightblue]
+	138281143600288 -> 138281143695536
+	138281143695536 [label=AccumulateGrad]
+	138281143475296 -> 138281143475392
+	138281143601008 [label="mids.0.resnet_conv_second.1.0.weight
+ (256)" fillcolor=lightblue]
+	138281143601008 -> 138281143475296
+	138281143475296 [label=AccumulateGrad]
+	138281143475680 -> 138281143475392
+	138281143601168 [label="mids.0.resnet_conv_second.1.0.bias
+ (256)" fillcolor=lightblue]
+	138281143601168 -> 138281143475680
+	138281143475680 [label=AccumulateGrad]
+	138281143475728 -> 138281143283632
+	138281143601248 [label="mids.0.resnet_conv_second.1.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143601248 -> 138281143475728
+	138281143475728 [label=AccumulateGrad]
+	138281143478512 -> 138281143283632
+	138281143601088 [label="mids.0.resnet_conv_second.1.2.bias
+ (256)" fillcolor=lightblue]
+	138281143601088 -> 138281143478512
+	138281143478512 [label=AccumulateGrad]
+	138281143283728 -> 138281143287712
+	138281143283728 -> 138281039037440 [dir=none]
+	138281039037440 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143283728 -> 138281143602208 [dir=none]
+	138281143602208 [label="weight
+ (256, 256, 1, 1)" fillcolor=orange]
+	138281143283728 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143474432 -> 138281143283728
+	138281143475152 -> 138281143283728
+	138281143602208 [label="mids.0.residual_input_conv.1.weight
+ (256, 256, 1, 1)" fillcolor=lightblue]
+	138281143602208 -> 138281143475152
+	138281143475152 [label=AccumulateGrad]
+	138281143475440 -> 138281143283728
+	138281143602048 [label="mids.0.residual_input_conv.1.bias
+ (256)" fillcolor=lightblue]
+	138281143602048 -> 138281143475440
+	138281143475440 [label=AccumulateGrad]
+	138281143284496 -> 138281143287088
+	138281143602128 [label="mids.1.resnet_conv_first.0.0.weight
+ (256)" fillcolor=lightblue]
+	138281143602128 -> 138281143284496
+	138281143284496 [label=AccumulateGrad]
+	138281143274656 -> 138281143287088
+	138281143601888 [label="mids.1.resnet_conv_first.0.0.bias
+ (256)" fillcolor=lightblue]
+	138281143601888 -> 138281143274656
+	138281143274656 [label=AccumulateGrad]
+	138281143286896 -> 138281143286992
+	138281143603088 [label="mids.1.resnet_conv_first.0.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143603088 -> 138281143286896
+	138281143286896 [label=AccumulateGrad]
+	138281143286368 -> 138281143286992
+	138281143602608 [label="mids.1.resnet_conv_first.0.2.bias
+ (256)" fillcolor=lightblue]
+	138281143602608 -> 138281143286368
+	138281143286368 [label=AccumulateGrad]
+	138281143271488 -> 138281143271680
+	138281143271488 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143284448 -> 138281143271488
+	138281143284448 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143283824 -> 138281143284448
+	138281143283824 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143474144 -> 138281143283824
+	138281143474144 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143472752 -> 138281143474144
+	138281143472752 -> 138281039036560 [dir=none]
+	138281039036560 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143472752 -> 138281039234368 [dir=none]
+	138281039234368 [label="mat2
+ (128, 256)" fillcolor=orange]
+	138281143472752 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 256)
+mat2_sym_strides:       (1, 128)"]
+	138281143480912 -> 138281143472752
+	138281143602528 [label="mids.1.t_emb_layers.0.1.bias
+ (256)" fillcolor=lightblue]
+	138281143602528 -> 138281143480912
+	138281143480912 [label=AccumulateGrad]
+	138281143483648 -> 138281143472752
+	138281143483648 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143483648 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143483648
+	138281143475776 -> 138281143472752
+	138281143475776 [label=TBackward0]
+	138281143682336 -> 138281143475776
+	138281143602448 [label="mids.1.t_emb_layers.0.1.weight
+ (256, 128)" fillcolor=lightblue]
+	138281143602448 -> 138281143682336
+	138281143682336 [label=AccumulateGrad]
+	138281143272064 -> 138281143272112
+	138281143604048 [label="mids.1.resnet_conv_second.0.0.weight
+ (256)" fillcolor=lightblue]
+	138281143604048 -> 138281143272064
+	138281143272064 [label=AccumulateGrad]
+	138281143284880 -> 138281143272112
+	138281143603568 [label="mids.1.resnet_conv_second.0.0.bias
+ (256)" fillcolor=lightblue]
+	138281143603568 -> 138281143284880
+	138281143284880 [label=AccumulateGrad]
+	138281143274224 -> 138281143274128
+	138281143603888 [label="mids.1.resnet_conv_second.0.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143603888 -> 138281143274224
+	138281143274224 [label=AccumulateGrad]
+	138281143274176 -> 138281143274128
+	138281143603968 [label="mids.1.resnet_conv_second.0.2.bias
+ (256)" fillcolor=lightblue]
+	138281143603968 -> 138281143274176
+	138281143274176 [label=AccumulateGrad]
+	138281143274080 -> 138281143287760
+	138281143274080 -> 138281039038080 [dir=none]
+	138281039038080 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143274080 -> 138281143604768 [dir=none]
+	138281143604768 [label="weight
+ (256, 256, 1, 1)" fillcolor=orange]
+	138281143274080 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143287712 -> 138281143274080
+	138281143271536 -> 138281143274080
+	138281143604768 [label="mids.1.residual_input_conv.0.weight
+ (256, 256, 1, 1)" fillcolor=lightblue]
+	138281143604768 -> 138281143271536
+	138281143271536 [label=AccumulateGrad]
+	138281143284832 -> 138281143274080
+	138281143604688 [label="mids.1.residual_input_conv.0.bias
+ (256)" fillcolor=lightblue]
+	138281143604688 -> 138281143284832
+	138281143284832 [label=AccumulateGrad]
+	138281143287568 -> 138281143275040
+	138281143287568 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1, 256, 1024)"]
+	138281143275088 -> 138281143287568
+	138281143275088 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143287328 -> 138281143275088
+	138281143287328 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143474480 -> 138281143287328
+	138281143474480 [label="ViewBackward0
+---------------------------
+self_sym_sizes: (1024, 256)"]
+	138281143274032 -> 138281143474480
+	138281143274032 -> 138281039039200 [dir=none]
+	138281039039200 [label="mat1
+ (1024, 256)" fillcolor=orange]
+	138281143274032 -> 138281039233888 [dir=none]
+	138281039233888 [label="mat2
+ (256, 256)" fillcolor=orange]
+	138281143274032 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :    (1024, 256)
+mat1_sym_strides:       (256, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (256, 256)
+mat2_sym_strides:       (1, 256)"]
+	138281143681472 -> 138281143274032
+	138281143604928 [label="mids.1.attentions.0.out_proj.bias
+ (256)" fillcolor=lightblue]
+	138281143604928 -> 138281143681472
+	138281143681472 [label=AccumulateGrad]
+	138281143690976 -> 138281143274032
+	138281143690976 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (1024, 4, 64)"]
+	138281143695104 -> 138281143690976
+	138281143695104 [label=CloneBackward0]
+	138281143684544 -> 138281143695104
+	138281143684544 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143690640 -> 138281143684544
+	138281143690640 -> 138281039038640 [dir=none]
+	138281039038640 [label="mat2
+ (4, 1024, 64)" fillcolor=orange]
+	138281143690640 -> 138281039039120 [dir=none]
+	138281039039120 [label="self
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143690640 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143690544 -> 138281143690640
+	138281143690544 -> 138281039234528 [dir=none]
+	138281039234528 [label="result
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143690544 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143684736 -> 138281143690544
+	138281143684736 -> 138281039038560 [dir=none]
+	138281039038560 [label="mat2
+ (4, 64, 1024)" fillcolor=orange]
+	138281143684736 -> 138281039038800 [dir=none]
+	138281039038800 [label="self
+ (4, 1024, 64)" fillcolor=orange]
+	138281143684736 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143684688 -> 138281143684736
+	138281143684688 -> 138281039234608 [dir=none]
+	138281039234608 [label="other
+ ()" fillcolor=orange]
+	138281143684688 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143685024 -> 138281143684688
+	138281143685024 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143696928 -> 138281143685024
+	138281143696928 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143685072 -> 138281143696928
+	138281143685072 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 0
+self_sym_sizes: (3, 1024, 1, 256)"]
+	138281143684880 -> 138281143685072
+	138281143684880 [label=CloneBackward0]
+	138281143684928 -> 138281143684880
+	138281143684928 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes: (3, 1024, 1, 1, 256)"]
+	138281143697120 -> 138281143684928
+	138281143697120 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143684352 -> 138281143697120
+	138281143684352 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143684400 -> 138281143684352
+	138281143684400 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 768)"]
+	138281143685456 -> 138281143684400
+	138281143685456 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143685408 -> 138281143685456
+	138281143685408 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (1024, 768)"]
+	138281143685360 -> 138281143685408
+	138281143685360 -> 138281039233328 [dir=none]
+	138281039233328 [label="mat2
+ (256, 768)" fillcolor=orange]
+	138281143685360 -> 138281039234128 [dir=none]
+	138281039234128 [label="self
+ (1024, 256)" fillcolor=orange]
+	138281143685360 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (256, 768)
+mat2_sym_strides:       (1, 256)
+self            : [saved tensor]
+self_sym_sizes  :    (1024, 256)
+self_sym_strides:      (1, 1024)"]
+	138281143685600 -> 138281143685360
+	138281143685600 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143686368 -> 138281143685600
+	138281143686368 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143686512 -> 138281143686368
+	138281143686512 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143686464 -> 138281143686512
+	138281143686464 -> 138281039037680 [dir=none]
+	138281039037680 [label="input
+ (1, 256, 1024)" fillcolor=orange]
+	138281143686464 -> 138281039234928 [dir=none]
+	138281039234928 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143686464 -> 138281039234688 [dir=none]
+	138281039234688 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143686464 -> 138281143603248 [dir=none]
+	138281143603248 [label="weight
+ (256)" fillcolor=orange]
+	138281143686464 [label="NativeGroupNormBackward0
+------------------------
+C      :            256
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143686656 -> 138281143686464
+	138281143686656 [label="ViewBackward0
+--------------------------------
+self_sym_sizes: (1, 256, 32, 32)"]
+	138281143287760 -> 138281143686656
+	138281143686560 -> 138281143686464
+	138281143603248 [label="mids.1.attention_norms.0.weight
+ (256)" fillcolor=lightblue]
+	138281143603248 -> 138281143686560
+	138281143686560 [label=AccumulateGrad]
+	138281143685696 -> 138281143686464
+	138281143603168 [label="mids.1.attention_norms.0.bias
+ (256)" fillcolor=lightblue]
+	138281143603168 -> 138281143685696
+	138281143685696 [label=AccumulateGrad]
+	138281143685504 -> 138281143685360
+	138281143685504 [label=TBackward0]
+	138281143686416 -> 138281143685504
+	138281143605008 [label="mids.1.attentions.0.in_proj_weight
+ (768, 256)" fillcolor=lightblue]
+	138281143605008 -> 138281143686416
+	138281143686416 [label=AccumulateGrad]
+	138281143685216 -> 138281143685456
+	138281143604448 [label="mids.1.attentions.0.in_proj_bias
+ (768)" fillcolor=lightblue]
+	138281143604448 -> 138281143685216
+	138281143685216 [label=AccumulateGrad]
+	138281143684640 -> 138281143684736
+	138281143684640 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143696784 -> 138281143684640
+	138281143696784 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143684976 -> 138281143696784
+	138281143684976 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143684304 -> 138281143684976
+	138281143684304 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 1
+self_sym_sizes: (3, 1024, 1, 256)"]
+	138281143684880 -> 138281143684304
+	138281143690592 -> 138281143690640
+	138281143690592 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143696880 -> 138281143690592
+	138281143696880 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 256)"]
+	138281143684496 -> 138281143696880
+	138281143684496 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 2
+self_sym_sizes: (3, 1024, 1, 256)"]
+	138281143684880 -> 138281143684496
+	138281143695776 -> 138281143274032
+	138281143695776 [label=TBackward0]
+	138281143690496 -> 138281143695776
+	138281143604848 [label="mids.1.attentions.0.out_proj.weight
+ (256, 256)" fillcolor=lightblue]
+	138281143604848 -> 138281143690496
+	138281143690496 [label=AccumulateGrad]
+	138281143275184 -> 138281143275232
+	138281143602848 [label="mids.1.resnet_conv_first.1.0.weight
+ (256)" fillcolor=lightblue]
+	138281143602848 -> 138281143275184
+	138281143275184 [label=AccumulateGrad]
+	138281143281472 -> 138281143275232
+	138281143602928 [label="mids.1.resnet_conv_first.1.0.bias
+ (256)" fillcolor=lightblue]
+	138281143602928 -> 138281143281472
+	138281143281472 [label=AccumulateGrad]
+	138281143281568 -> 138281143280992
+	138281143602768 [label="mids.1.resnet_conv_first.1.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143602768 -> 138281143281568
+	138281143281568 [label=AccumulateGrad]
+	138281143282528 -> 138281143280992
+	138281143602688 [label="mids.1.resnet_conv_first.1.2.bias
+ (256)" fillcolor=lightblue]
+	138281143602688 -> 138281143282528
+	138281143282528 [label=AccumulateGrad]
+	138281143287280 -> 138281143285600
+	138281143287280 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143287664 -> 138281143287280
+	138281143287664 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143284928 -> 138281143287664
+	138281143284928 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143475200 -> 138281143284928
+	138281143475200 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 256)
+start         :                   0
+step          :                   1"]
+	138281143281424 -> 138281143475200
+	138281143281424 -> 138281039039680 [dir=none]
+	138281039039680 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143281424 -> 138281039235008 [dir=none]
+	138281039235008 [label="mat2
+ (128, 256)" fillcolor=orange]
+	138281143281424 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 256)
+mat2_sym_strides:       (1, 128)"]
+	138281143684784 -> 138281143281424
+	138281143602288 [label="mids.1.t_emb_layers.1.1.bias
+ (256)" fillcolor=lightblue]
+	138281143602288 -> 138281143684784
+	138281143684784 [label=AccumulateGrad]
+	138281143690256 -> 138281143281424
+	138281143690256 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143690256 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143690256
+	138281143696064 -> 138281143281424
+	138281143696064 [label=TBackward0]
+	138281143685552 -> 138281143696064
+	138281143602368 [label="mids.1.t_emb_layers.1.1.weight
+ (256, 128)" fillcolor=lightblue]
+	138281143602368 -> 138281143685552
+	138281143685552 [label=AccumulateGrad]
+	138281143287136 -> 138281143283776
+	138281143603728 [label="mids.1.resnet_conv_second.1.0.weight
+ (256)" fillcolor=lightblue]
+	138281143603728 -> 138281143287136
+	138281143287136 [label=AccumulateGrad]
+	138281143283056 -> 138281143283776
+	138281143603648 [label="mids.1.resnet_conv_second.1.0.bias
+ (256)" fillcolor=lightblue]
+	138281143603648 -> 138281143283056
+	138281143283056 [label=AccumulateGrad]
+	138281143285552 -> 138281143277632
+	138281143603408 [label="mids.1.resnet_conv_second.1.2.weight
+ (256, 256, 3, 3)" fillcolor=lightblue]
+	138281143603408 -> 138281143285552
+	138281143285552 [label=AccumulateGrad]
+	138281143276864 -> 138281143277632
+	138281143603488 [label="mids.1.resnet_conv_second.1.2.bias
+ (256)" fillcolor=lightblue]
+	138281143603488 -> 138281143276864
+	138281143276864 [label=AccumulateGrad]
+	138281143285792 -> 138281143286032
+	138281143285792 -> 138281039039360 [dir=none]
+	138281039039360 [label="input
+ (1, 256, 32, 32)" fillcolor=orange]
+	138281143285792 -> 138281143604208 [dir=none]
+	138281143604208 [label="weight
+ (256, 256, 1, 1)" fillcolor=orange]
+	138281143285792 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (256,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143275040 -> 138281143285792
+	138281143280944 -> 138281143285792
+	138281143604208 [label="mids.1.residual_input_conv.1.weight
+ (256, 256, 1, 1)" fillcolor=lightblue]
+	138281143604208 -> 138281143280944
+	138281143280944 [label=AccumulateGrad]
+	138281143283584 -> 138281143285792
+	138281143604368 [label="mids.1.residual_input_conv.1.bias
+ (256)" fillcolor=lightblue]
+	138281143604368 -> 138281143283584
+	138281143283584 [label=AccumulateGrad]
+	138281143285216 -> 138281143286224
+	138281143275328 -> 138281143285312
+	138281143604288 [label="ups.0.resnet_conv_first.0.0.weight
+ (512)" fillcolor=lightblue]
+	138281143604288 -> 138281143275328
+	138281143275328 [label=AccumulateGrad]
+	138281143285168 -> 138281143285312
+	138281143604128 [label="ups.0.resnet_conv_first.0.0.bias
+ (512)" fillcolor=lightblue]
+	138281143604128 -> 138281143285168
+	138281143285168 [label=AccumulateGrad]
+	138281143285360 -> 138281143275664
+	138281143605488 [label="ups.0.resnet_conv_first.0.2.weight
+ (128, 512, 3, 3)" fillcolor=lightblue]
+	138281143605488 -> 138281143285360
+	138281143285360 [label=AccumulateGrad]
+	138281143285408 -> 138281143275664
+	138281143605728 [label="ups.0.resnet_conv_first.0.2.bias
+ (128)" fillcolor=lightblue]
+	138281143605728 -> 138281143285408
+	138281143285408 [label=AccumulateGrad]
+	138281143282624 -> 138281143285504
+	138281143282624 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143286176 -> 138281143282624
+	138281143286176 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143285696 -> 138281143286176
+	138281143285696 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:            (1, 128)
+start         :                   0
+step          :                   1"]
+	138281143281040 -> 138281143285696
+	138281143281040 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:            (1, 128)
+start         :                   0
+step          :                   1"]
+	138281143287616 -> 138281143281040
+	138281143287616 -> 138281039038480 [dir=none]
+	138281039038480 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143287616 -> 138281039234848 [dir=none]
+	138281039234848 [label="mat2
+ (128, 128)" fillcolor=orange]
+	138281143287616 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 128)
+mat2_sym_strides:       (1, 128)"]
+	138281143286800 -> 138281143287616
+	138281143605808 [label="ups.0.t_emb_layers.0.1.bias
+ (128)" fillcolor=lightblue]
+	138281143605808 -> 138281143286800
+	138281143286800 [label=AccumulateGrad]
+	138281143275280 -> 138281143287616
+	138281143275280 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143275280 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143275280
+	138281143695584 -> 138281143287616
+	138281143695584 [label=TBackward0]
+	138281143697312 -> 138281143695584
+	138281143605888 [label="ups.0.t_emb_layers.0.1.weight
+ (128, 128)" fillcolor=lightblue]
+	138281143605888 -> 138281143697312
+	138281143697312 [label=AccumulateGrad]
+	138281143285072 -> 138281143285456
+	138281143606048 [label="ups.0.resnet_conv_second.0.0.weight
+ (128)" fillcolor=lightblue]
+	138281143606048 -> 138281143285072
+	138281143285072 [label=AccumulateGrad]
+	138281143286464 -> 138281143285456
+	138281143605968 [label="ups.0.resnet_conv_second.0.0.bias
+ (128)" fillcolor=lightblue]
+	138281143605968 -> 138281143286464
+	138281143286464 [label=AccumulateGrad]
+	138281143275472 -> 138281143275424
+	138281143605568 [label="ups.0.resnet_conv_second.0.2.weight
+ (128, 128, 3, 3)" fillcolor=lightblue]
+	138281143605568 -> 138281143275472
+	138281143275472 [label=AccumulateGrad]
+	138281143275376 -> 138281143275424
+	138281143606288 [label="ups.0.resnet_conv_second.0.2.bias
+ (128)" fillcolor=lightblue]
+	138281143606288 -> 138281143275376
+	138281143275376 [label=AccumulateGrad]
+	138281143274752 -> 138281143287232
+	138281143274752 -> 138281531322304 [dir=none]
+	138281531322304 [label="input
+ (1, 512, 32, 32)" fillcolor=orange]
+	138281143274752 -> 138281143606448 [dir=none]
+	138281143606448 [label="weight
+ (128, 512, 1, 1)" fillcolor=orange]
+	138281143274752 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:         (128,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143286224 -> 138281143274752
+	138281143285120 -> 138281143274752
+	138281143606448 [label="ups.0.residual_input_conv.0.weight
+ (128, 512, 1, 1)" fillcolor=lightblue]
+	138281143606448 -> 138281143285120
+	138281143285120 [label=AccumulateGrad]
+	138281143278784 -> 138281143274752
+	138281143606368 [label="ups.0.residual_input_conv.0.bias
+ (128)" fillcolor=lightblue]
+	138281143606368 -> 138281143278784
+	138281143278784 [label=AccumulateGrad]
+	138281143287472 -> 138281143271584
+	138281143287472 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1, 128, 1024)"]
+	138281143285264 -> 138281143287472
+	138281143285264 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143285936 -> 138281143285264
+	138281143285936 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143281328 -> 138281143285936
+	138281143281328 [label="ViewBackward0
+---------------------------
+self_sym_sizes: (1024, 128)"]
+	138281143286512 -> 138281143281328
+	138281143286512 -> 138281039041120 [dir=none]
+	138281039041120 [label="mat1
+ (1024, 128)" fillcolor=orange]
+	138281143286512 -> 138281039235088 [dir=none]
+	138281039235088 [label="mat2
+ (128, 128)" fillcolor=orange]
+	138281143286512 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :    (1024, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 128)
+mat2_sym_strides:       (1, 128)"]
+	138281143684448 -> 138281143286512
+	138281143606848 [label="ups.0.attentions.0.out_proj.bias
+ (128)" fillcolor=lightblue]
+	138281143606848 -> 138281143684448
+	138281143684448 [label=AccumulateGrad]
+	138281143685648 -> 138281143286512
+	138281143685648 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (1024, 4, 32)"]
+	138281143697072 -> 138281143685648
+	138281143697072 [label=CloneBackward0]
+	138281143685264 -> 138281143697072
+	138281143685264 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143684208 -> 138281143685264
+	138281143684208 -> 138281039040560 [dir=none]
+	138281039040560 [label="mat2
+ (4, 1024, 32)" fillcolor=orange]
+	138281143684208 -> 138281039041040 [dir=none]
+	138281039041040 [label="self
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143684208 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143683248 -> 138281143684208
+	138281143683248 -> 138281039235248 [dir=none]
+	138281039235248 [label="result
+ (4, 1024, 1024)" fillcolor=orange]
+	138281143683248 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143683104 -> 138281143683248
+	138281143683104 -> 138281039040480 [dir=none]
+	138281039040480 [label="mat2
+ (4, 32, 1024)" fillcolor=orange]
+	138281143683104 -> 138281039040720 [dir=none]
+	138281039040720 [label="self
+ (4, 1024, 32)" fillcolor=orange]
+	138281143683104 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143682816 -> 138281143683104
+	138281143682816 -> 138281039235488 [dir=none]
+	138281039235488 [label="other
+ ()" fillcolor=orange]
+	138281143682816 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143684256 -> 138281143682816
+	138281143684256 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143695488 -> 138281143684256
+	138281143695488 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 128)"]
+	138281143683296 -> 138281143695488
+	138281143683296 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 0
+self_sym_sizes: (3, 1024, 1, 128)"]
+	138281143684112 -> 138281143683296
+	138281143684112 [label=CloneBackward0]
+	138281143683968 -> 138281143684112
+	138281143683968 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes: (3, 1024, 1, 1, 128)"]
+	138281143684016 -> 138281143683968
+	138281143684016 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143683920 -> 138281143684016
+	138281143683920 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143684064 -> 138281143683920
+	138281143684064 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 384)"]
+	138281143683728 -> 138281143684064
+	138281143683728 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143683488 -> 138281143683728
+	138281143683488 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (1024, 384)"]
+	138281143683392 -> 138281143683488
+	138281143683392 -> 138281039235408 [dir=none]
+	138281039235408 [label="mat2
+ (128, 384)" fillcolor=orange]
+	138281143683392 -> 138281039235168 [dir=none]
+	138281039235168 [label="self
+ (1024, 128)" fillcolor=orange]
+	138281143683392 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :     (128, 384)
+mat2_sym_strides:       (1, 128)
+self            : [saved tensor]
+self_sym_sizes  :    (1024, 128)
+self_sym_strides:      (1, 1024)"]
+	138281143683776 -> 138281143683392
+	138281143683776 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 128)"]
+	138281143683440 -> 138281143683776
+	138281143683440 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143686272 -> 138281143683440
+	138281143686272 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143686704 -> 138281143686272
+	138281143686704 -> 138281039040160 [dir=none]
+	138281039040160 [label="input
+ (1, 128, 1024)" fillcolor=orange]
+	138281143686704 -> 138281039235728 [dir=none]
+	138281039235728 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143686704 -> 138281039234448 [dir=none]
+	138281039234448 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143686704 -> 138281143606208 [dir=none]
+	138281143606208 [label="weight
+ (128)" fillcolor=orange]
+	138281143686704 [label="NativeGroupNormBackward0
+------------------------
+C      :            128
+HxW    :           1024
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143687232 -> 138281143686704
+	138281143687232 [label="ViewBackward0
+--------------------------------
+self_sym_sizes: (1, 128, 32, 32)"]
+	138281143287232 -> 138281143687232
+	138281143686800 -> 138281143686704
+	138281143606208 [label="ups.0.attention_norms.0.weight
+ (128)" fillcolor=lightblue]
+	138281143606208 -> 138281143686800
+	138281143686800 [label=AccumulateGrad]
+	138281143683344 -> 138281143686704
+	138281143606128 [label="ups.0.attention_norms.0.bias
+ (128)" fillcolor=lightblue]
+	138281143606128 -> 138281143683344
+	138281143683344 [label=AccumulateGrad]
+	138281143683632 -> 138281143683392
+	138281143683632 [label=TBackward0]
+	138281143686224 -> 138281143683632
+	138281143606528 [label="ups.0.attentions.0.in_proj_weight
+ (384, 128)" fillcolor=lightblue]
+	138281143606528 -> 138281143686224
+	138281143686224 [label=AccumulateGrad]
+	138281143683584 -> 138281143683728
+	138281143606688 [label="ups.0.attentions.0.in_proj_bias
+ (384)" fillcolor=lightblue]
+	138281143606688 -> 138281143683584
+	138281143683584 [label=AccumulateGrad]
+	138281143682720 -> 138281143683104
+	138281143682720 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143686032 -> 138281143682720
+	138281143686032 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143684160 -> 138281143686032
+	138281143684160 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 128)"]
+	138281143683824 -> 138281143684160
+	138281143683824 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 1
+self_sym_sizes: (3, 1024, 1, 128)"]
+	138281143684112 -> 138281143683824
+	138281143686608 -> 138281143684208
+	138281143686608 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143682912 -> 138281143686608
+	138281143682912 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (1024, 1, 128)"]
+	138281143685936 -> 138281143682912
+	138281143685936 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 2
+self_sym_sizes: (3, 1024, 1, 128)"]
+	138281143684112 -> 138281143685936
+	138281143690352 -> 138281143286512
+	138281143690352 [label=TBackward0]
+	138281143683008 -> 138281143690352
+	138281143606608 [label="ups.0.attentions.0.out_proj.weight
+ (128, 128)" fillcolor=lightblue]
+	138281143606608 -> 138281143683008
+	138281143683008 [label=AccumulateGrad]
+	138281143286320 -> 138281143286416
+	138281143608688 [label="ups.1.up_sample_conv.weight
+ (128, 128, 4, 4)" fillcolor=lightblue]
+	138281143608688 -> 138281143286320
+	138281143286320 [label=AccumulateGrad]
+	138281143286656 -> 138281143286416
+	138281143435024 [label="ups.1.up_sample_conv.bias
+ (128)" fillcolor=lightblue]
+	138281143435024 -> 138281143286656
+	138281143286656 [label=AccumulateGrad]
+	138281143286608 -> 138281143280320
+	138281143282816 -> 138281143283008
+	138281143605408 [label="ups.1.resnet_conv_first.0.0.weight
+ (256)" fillcolor=lightblue]
+	138281143605408 -> 138281143282816
+	138281143282816 [label=AccumulateGrad]
+	138281143282864 -> 138281143283008
+	138281143605328 [label="ups.1.resnet_conv_first.0.0.bias
+ (256)" fillcolor=lightblue]
+	138281143605328 -> 138281143282864
+	138281143282864 [label=AccumulateGrad]
+	138281143280272 -> 138281143278688
+	138281143605088 [label="ups.1.resnet_conv_first.0.2.weight
+ (64, 256, 3, 3)" fillcolor=lightblue]
+	138281143605088 -> 138281143280272
+	138281143280272 [label=AccumulateGrad]
+	138281143280176 -> 138281143278688
+	138281143607088 [label="ups.1.resnet_conv_first.0.2.bias
+ (64)" fillcolor=lightblue]
+	138281143607088 -> 138281143280176
+	138281143280176 [label=AccumulateGrad]
+	138281143280032 -> 138281143279936
+	138281143280032 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143280224 -> 138281143280032
+	138281143280224 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143287184 -> 138281143280224
+	138281143287184 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:             (1, 64)
+start         :                   0
+step          :                   1"]
+	138281143286848 -> 138281143287184
+	138281143286848 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:             (1, 64)
+start         :                   0
+step          :                   1"]
+	138281143285984 -> 138281143286848
+	138281143285984 -> 138281039040960 [dir=none]
+	138281039040960 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143285984 -> 138281039235888 [dir=none]
+	138281039235888 [label="mat2
+ (128, 64)" fillcolor=orange]
+	138281143285984 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :      (128, 64)
+mat2_sym_strides:       (1, 128)"]
+	138281143282912 -> 138281143285984
+	138281143607408 [label="ups.1.t_emb_layers.0.1.bias
+ (64)" fillcolor=lightblue]
+	138281143607408 -> 138281143282912
+	138281143282912 [label=AccumulateGrad]
+	138281143696832 -> 138281143285984
+	138281143696832 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143696832 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143696832
+	138281143684592 -> 138281143285984
+	138281143684592 [label=TBackward0]
+	138281143684832 -> 138281143684592
+	138281143607248 [label="ups.1.t_emb_layers.0.1.weight
+ (64, 128)" fillcolor=lightblue]
+	138281143607248 -> 138281143684832
+	138281143684832 [label=AccumulateGrad]
+	138281143280128 -> 138281143278736
+	138281143605168 [label="ups.1.resnet_conv_second.0.0.weight
+ (64)" fillcolor=lightblue]
+	138281143605168 -> 138281143280128
+	138281143280128 [label=AccumulateGrad]
+	138281143273456 -> 138281143278736
+	138281143607568 [label="ups.1.resnet_conv_second.0.0.bias
+ (64)" fillcolor=lightblue]
+	138281143607568 -> 138281143273456
+	138281143273456 [label=AccumulateGrad]
+	138281143278208 -> 138281143278160
+	138281143607328 [label="ups.1.resnet_conv_second.0.2.weight
+ (64, 64, 3, 3)" fillcolor=lightblue]
+	138281143607328 -> 138281143278208
+	138281143278208 [label=AccumulateGrad]
+	138281143278400 -> 138281143278160
+	138281143607168 [label="ups.1.resnet_conv_second.0.2.bias
+ (64)" fillcolor=lightblue]
+	138281143607168 -> 138281143278400
+	138281143278400 [label=AccumulateGrad]
+	138281143278496 -> 138281143278592
+	138281143278496 -> 138281143798016 [dir=none]
+	138281143798016 [label="input
+ (1, 256, 64, 64)" fillcolor=orange]
+	138281143278496 -> 138281143608928 [dir=none]
+	138281143608928 [label="weight
+ (64, 256, 1, 1)" fillcolor=orange]
+	138281143278496 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (64,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143280320 -> 138281143278496
+	138281143280080 -> 138281143278496
+	138281143608928 [label="ups.1.residual_input_conv.0.weight
+ (64, 256, 1, 1)" fillcolor=lightblue]
+	138281143608928 -> 138281143280080
+	138281143280080 [label=AccumulateGrad]
+	138281143278640 -> 138281143278496
+	138281143608768 [label="ups.1.residual_input_conv.0.bias
+ (64)" fillcolor=lightblue]
+	138281143608768 -> 138281143278640
+	138281143278640 [label=AccumulateGrad]
+	138281143278544 -> 138281143278448
+	138281143278544 [label="ReshapeAliasBackward0
+-----------------------------
+self_sym_sizes: (1, 64, 4096)"]
+	138281143287040 -> 138281143278544
+	138281143287040 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143282960 -> 138281143287040
+	138281143282960 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143282672 -> 138281143282960
+	138281143282672 [label="ViewBackward0
+--------------------------
+self_sym_sizes: (4096, 64)"]
+	138281143685984 -> 138281143282672
+	138281143685984 -> 138281039042560 [dir=none]
+	138281039042560 [label="mat1
+ (4096, 64)" fillcolor=orange]
+	138281143685984 -> 138281039235648 [dir=none]
+	138281039235648 [label="mat2
+ (64, 64)" fillcolor=orange]
+	138281143685984 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :     (4096, 64)
+mat1_sym_strides:        (64, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :       (64, 64)
+mat2_sym_strides:        (1, 64)"]
+	138281143682768 -> 138281143685984
+	138281143608608 [label="ups.1.attentions.0.out_proj.bias
+ (64)" fillcolor=lightblue]
+	138281143608608 -> 138281143682768
+	138281143682768 [label=AccumulateGrad]
+	138281143682576 -> 138281143685984
+	138281143682576 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (4096, 4, 16)"]
+	138281143683056 -> 138281143682576
+	138281143683056 [label=CloneBackward0]
+	138281143686128 -> 138281143683056
+	138281143686128 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143686080 -> 138281143686128
+	138281143686080 -> 138281039041920 [dir=none]
+	138281039041920 [label="mat2
+ (4, 4096, 16)" fillcolor=orange]
+	138281143686080 -> 138281039042400 [dir=none]
+	138281039042400 [label="self
+ (4, 4096, 4096)" fillcolor=orange]
+	138281143686080 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143686848 -> 138281143686080
+	138281143686848 -> 138281039235808 [dir=none]
+	138281039235808 [label="result
+ (4, 4096, 4096)" fillcolor=orange]
+	138281143686848 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143687088 -> 138281143686848
+	138281143687088 -> 138281039041760 [dir=none]
+	138281039041760 [label="mat2
+ (4, 16, 4096)" fillcolor=orange]
+	138281143687088 -> 138281039042080 [dir=none]
+	138281039042080 [label="self
+ (4, 4096, 16)" fillcolor=orange]
+	138281143687088 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143688480 -> 138281143687088
+	138281143688480 -> 138281039236208 [dir=none]
+	138281039236208 [label="other
+ ()" fillcolor=orange]
+	138281143688480 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143688384 -> 138281143688480
+	138281143688384 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143687184 -> 138281143688384
+	138281143687184 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (4096, 1, 64)"]
+	138281143686992 -> 138281143687184
+	138281143686992 [label="SelectBackward0
+--------------------------------
+dim           :                0
+index         :                0
+self_sym_sizes: (3, 4096, 1, 64)"]
+	138281143687376 -> 138281143686992
+	138281143687376 [label=CloneBackward0]
+	138281143687136 -> 138281143687376
+	138281143687136 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes:  (3, 4096, 1, 1, 64)"]
+	138281143687904 -> 138281143687136
+	138281143687904 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143687664 -> 138281143687904
+	138281143687664 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143688288 -> 138281143687664
+	138281143688288 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (4096, 1, 192)"]
+	138281143688192 -> 138281143688288
+	138281143688192 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143689872 -> 138281143688192
+	138281143689872 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (4096, 192)"]
+	138281143690832 -> 138281143689872
+	138281143690832 -> 138281039236048 [dir=none]
+	138281039236048 [label="mat2
+ (64, 192)" fillcolor=orange]
+	138281143690832 -> 138281039236288 [dir=none]
+	138281039236288 [label="self
+ (4096, 64)" fillcolor=orange]
+	138281143690832 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :      (64, 192)
+mat2_sym_strides:        (1, 64)
+self            : [saved tensor]
+self_sym_sizes  :     (4096, 64)
+self_sym_strides:      (1, 4096)"]
+	138281143690928 -> 138281143690832
+	138281143690928 [label="ReshapeAliasBackward0
+-----------------------------
+self_sym_sizes: (4096, 1, 64)"]
+	138281143693472 -> 138281143690928
+	138281143693472 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143691936 -> 138281143693472
+	138281143691936 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143691072 -> 138281143691936
+	138281143691072 -> 138281039040320 [dir=none]
+	138281039040320 [label="input
+ (1, 64, 4096)" fillcolor=orange]
+	138281143691072 -> 138281039236448 [dir=none]
+	138281039236448 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143691072 -> 138281039235968 [dir=none]
+	138281039235968 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143691072 -> 138281143607008 [dir=none]
+	138281143607008 [label="weight
+ (64)" fillcolor=orange]
+	138281143691072 [label="NativeGroupNormBackward0
+------------------------
+C      :             64
+HxW    :           4096
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143689536 -> 138281143691072
+	138281143689536 [label="ViewBackward0
+-------------------------------
+self_sym_sizes: (1, 64, 64, 64)"]
+	138281143278592 -> 138281143689536
+	138281143689920 -> 138281143691072
+	138281143607008 [label="ups.1.attention_norms.0.weight
+ (64)" fillcolor=lightblue]
+	138281143607008 -> 138281143689920
+	138281143689920 [label=AccumulateGrad]
+	138281143690880 -> 138281143691072
+	138281143606928 [label="ups.1.attention_norms.0.bias
+ (64)" fillcolor=lightblue]
+	138281143606928 -> 138281143690880
+	138281143690880 [label=AccumulateGrad]
+	138281143690784 -> 138281143690832
+	138281143690784 [label=TBackward0]
+	138281143691120 -> 138281143690784
+	138281143607808 [label="ups.1.attentions.0.in_proj_weight
+ (192, 64)" fillcolor=lightblue]
+	138281143607808 -> 138281143691120
+	138281143691120 [label=AccumulateGrad]
+	138281143687952 -> 138281143688192
+	138281143608048 [label="ups.1.attentions.0.in_proj_bias
+ (192)" fillcolor=lightblue]
+	138281143608048 -> 138281143687952
+	138281143687952 [label=AccumulateGrad]
+	138281143687328 -> 138281143687088
+	138281143687328 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143686896 -> 138281143687328
+	138281143686896 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143687280 -> 138281143686896
+	138281143687280 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (4096, 1, 64)"]
+	138281143687616 -> 138281143687280
+	138281143687616 [label="SelectBackward0
+--------------------------------
+dim           :                0
+index         :                1
+self_sym_sizes: (3, 4096, 1, 64)"]
+	138281143687376 -> 138281143687616
+	138281143686752 -> 138281143686080
+	138281143686752 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143686944 -> 138281143686752
+	138281143686944 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (4096, 1, 64)"]
+	138281143687856 -> 138281143686944
+	138281143687856 [label="SelectBackward0
+--------------------------------
+dim           :                0
+index         :                2
+self_sym_sizes: (3, 4096, 1, 64)"]
+	138281143687376 -> 138281143687856
+	138281143685312 -> 138281143685984
+	138281143685312 [label=TBackward0]
+	138281143683536 -> 138281143685312
+	138281143608528 [label="ups.1.attentions.0.out_proj.weight
+ (64, 64)" fillcolor=lightblue]
+	138281143608528 -> 138281143683536
+	138281143683536 [label=AccumulateGrad]
+	138281143278064 -> 138281143273888
+	138281143612128 [label="ups.2.up_sample_conv.weight
+ (64, 64, 4, 4)" fillcolor=lightblue]
+	138281143612128 -> 138281143278064
+	138281143278064 [label=AccumulateGrad]
+	138281143277872 -> 138281143273888
+	138281143611968 [label="ups.2.up_sample_conv.bias
+ (64)" fillcolor=lightblue]
+	138281143611968 -> 138281143277872
+	138281143277872 [label=AccumulateGrad]
+	138281143273696 -> 138281143273744
+	138281143273936 -> 138281143273648
+	138281143608848 [label="ups.2.resnet_conv_first.0.0.weight
+ (128)" fillcolor=lightblue]
+	138281143608848 -> 138281143273936
+	138281143273936 [label=AccumulateGrad]
+	138281143273792 -> 138281143273648
+	138281143608128 [label="ups.2.resnet_conv_first.0.0.bias
+ (128)" fillcolor=lightblue]
+	138281143608128 -> 138281143273792
+	138281143273792 [label=AccumulateGrad]
+	138281143273840 -> 138281143286272
+	138281143608448 [label="ups.2.resnet_conv_first.0.2.weight
+ (16, 128, 3, 3)" fillcolor=lightblue]
+	138281143608448 -> 138281143273840
+	138281143273840 [label=AccumulateGrad]
+	138281143282384 -> 138281143286272
+	138281143608288 [label="ups.2.resnet_conv_first.0.2.bias
+ (16)" fillcolor=lightblue]
+	138281143608288 -> 138281143282384
+	138281143282384 [label=AccumulateGrad]
+	138281143282144 -> 138281143281664
+	138281143282144 [label="UnsqueezeBackward0
+------------------
+dim: 3"]
+	138281143278016 -> 138281143282144
+	138281143278016 [label="UnsqueezeBackward0
+------------------
+dim: 2"]
+	138281143278352 -> 138281143278016
+	138281143278352 [label="SliceBackward0
+-----------------------------------
+dim           :                   1
+end           : 9223372036854775807
+self_sym_sizes:             (1, 16)
+start         :                   0
+step          :                   1"]
+	138281143277920 -> 138281143278352
+	138281143277920 [label="SliceBackward0
+-----------------------------------
+dim           :                   0
+end           : 9223372036854775807
+self_sym_sizes:             (1, 16)
+start         :                   0
+step          :                   1"]
+	138281143278112 -> 138281143277920
+	138281143278112 -> 138281039042240 [dir=none]
+	138281039042240 [label="mat1
+ (1, 128)" fillcolor=orange]
+	138281143278112 -> 138281039236688 [dir=none]
+	138281039236688 [label="mat2
+ (128, 16)" fillcolor=orange]
+	138281143278112 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :       (1, 128)
+mat1_sym_strides:       (128, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :      (128, 16)
+mat2_sym_strides:       (1, 128)"]
+	138281143273600 -> 138281143278112
+	138281143607968 [label="ups.2.t_emb_layers.0.1.bias
+ (16)" fillcolor=lightblue]
+	138281143607968 -> 138281143273600
+	138281143273600 [label=AccumulateGrad]
+	138281143683872 -> 138281143278112
+	138281143683872 -> 138281145459040 [dir=none]
+	138281145459040 [label="self
+ (1, 128)" fillcolor=orange]
+	138281143683872 [label="SiluBackward0
+--------------------
+self: [saved tensor]"]
+	138281143476784 -> 138281143683872
+	138281143686320 -> 138281143278112
+	138281143686320 [label=TBackward0]
+	138281143686176 -> 138281143686320
+	138281143608208 [label="ups.2.t_emb_layers.0.1.weight
+ (16, 128)" fillcolor=lightblue]
+	138281143608208 -> 138281143686176
+	138281143686176 [label=AccumulateGrad]
+	138281143281952 -> 138281143281760
+	138281143607888 [label="ups.2.resnet_conv_second.0.0.weight
+ (16)" fillcolor=lightblue]
+	138281143607888 -> 138281143281952
+	138281143281952 [label=AccumulateGrad]
+	138281143281856 -> 138281143281760
+	138281143607728 [label="ups.2.resnet_conv_second.0.0.bias
+ (16)" fillcolor=lightblue]
+	138281143607728 -> 138281143281856
+	138281143281856 [label=AccumulateGrad]
+	138281143277824 -> 138281143275520
+	138281143609168 [label="ups.2.resnet_conv_second.0.2.weight
+ (16, 16, 3, 3)" fillcolor=lightblue]
+	138281143609168 -> 138281143277824
+	138281143277824 [label=AccumulateGrad]
+	138281143282000 -> 138281143275520
+	138281143609408 [label="ups.2.resnet_conv_second.0.2.bias
+ (16)" fillcolor=lightblue]
+	138281143609408 -> 138281143282000
+	138281143282000 [label=AccumulateGrad]
+	138281143281904 -> 138281143282288
+	138281143281904 -> 138281039041840 [dir=none]
+	138281039041840 [label="input
+ (1, 128, 128, 128)" fillcolor=orange]
+	138281143281904 -> 138281143610768 [dir=none]
+	138281143610768 [label="weight
+ (16, 128, 1, 1)" fillcolor=orange]
+	138281143281904 [label="ConvolutionBackward0
+----------------------------------
+bias_sym_sizes_opt:          (16,)
+dilation          :         (1, 1)
+groups            :              1
+input             : [saved tensor]
+output_padding    :         (0, 0)
+padding           :         (0, 0)
+stride            :         (1, 1)
+transposed        :          False
+weight            : [saved tensor]"]
+	138281143273744 -> 138281143281904
+	138281143279888 -> 138281143281904
+	138281143610768 [label="ups.2.residual_input_conv.0.weight
+ (16, 128, 1, 1)" fillcolor=lightblue]
+	138281143610768 -> 138281143279888
+	138281143279888 [label=AccumulateGrad]
+	138281143282048 -> 138281143281904
+	138281143611808 [label="ups.2.residual_input_conv.0.bias
+ (16)" fillcolor=lightblue]
+	138281143611808 -> 138281143282048
+	138281143282048 [label=AccumulateGrad]
+	138281143281712 -> 138281143282480
+	138281143281712 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (1, 16, 16384)"]
+	138281143282240 -> 138281143281712
+	138281143282240 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143277968 -> 138281143282240
+	138281143277968 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143279984 -> 138281143277968
+	138281143279984 [label="ViewBackward0
+---------------------------
+self_sym_sizes: (16384, 16)"]
+	138281143280512 -> 138281143279984
+	138281143280512 -> 138281039044560 [dir=none]
+	138281039044560 [label="mat1
+ (16384, 16)" fillcolor=orange]
+	138281143280512 -> 138281039236928 [dir=none]
+	138281039236928 [label="mat2
+ (16, 16)" fillcolor=orange]
+	138281143280512 [label="AddmmBackward0
+--------------------------------
+alpha           :              1
+beta            :              1
+mat1            : [saved tensor]
+mat1_sym_sizes  :    (16384, 16)
+mat1_sym_strides:        (16, 1)
+mat2            : [saved tensor]
+mat2_sym_sizes  :       (16, 16)
+mat2_sym_strides:        (1, 16)"]
+	138281143687424 -> 138281143280512
+	138281143609648 [label="ups.2.attentions.0.out_proj.bias
+ (16)" fillcolor=lightblue]
+	138281143609648 -> 138281143687424
+	138281143687424 [label=AccumulateGrad]
+	138281143688000 -> 138281143280512
+	138281143688000 [label="ViewBackward0
+-----------------------------
+self_sym_sizes: (16384, 4, 4)"]
+	138281143688144 -> 138281143688000
+	138281143688144 [label=CloneBackward0]
+	138281143688048 -> 138281143688144
+	138281143688048 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143689968 -> 138281143688048
+	138281143689968 -> 138281039043520 [dir=none]
+	138281039043520 [label="mat2
+ (4, 16384, 4)" fillcolor=orange]
+	138281143689968 -> 138281039044400 [dir=none]
+	138281039044400 [label="self
+ (4, 16384, 16384)" fillcolor=orange]
+	138281143689968 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143681136 -> 138281143689968
+	138281143681136 -> 138281039236368 [dir=none]
+	138281039236368 [label="result
+ (4, 16384, 16384)" fillcolor=orange]
+	138281143681136 [label="SoftmaxBackward0
+----------------------------
+dim   : 18446744073709551615
+result:       [saved tensor]"]
+	138281143681424 -> 138281143681136
+	138281143681424 -> 138281039043440 [dir=none]
+	138281039043440 [label="mat2
+ (4, 4, 16384)" fillcolor=orange]
+	138281143681424 -> 138281039043680 [dir=none]
+	138281039043680 [label="self
+ (4, 16384, 4)" fillcolor=orange]
+	138281143681424 [label="BmmBackward0
+--------------------
+mat2: [saved tensor]
+self: [saved tensor]"]
+	138281143681568 -> 138281143681424
+	138281143681568 -> 138281039237088 [dir=none]
+	138281039237088 [label="other
+ ()" fillcolor=orange]
+	138281143681568 [label="MulBackward0
+---------------------
+other: [saved tensor]
+self :           None"]
+	138281143681088 -> 138281143681568
+	138281143681088 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143681904 -> 138281143681088
+	138281143681904 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (16384, 1, 16)"]
+	138281143681952 -> 138281143681904
+	138281143681952 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 0
+self_sym_sizes: (3, 16384, 1, 16)"]
+	138281143681184 -> 138281143681952
+	138281143681184 [label=CloneBackward0]
+	138281143682096 -> 138281143681184
+	138281143682096 [label="SqueezeBackward1
+------------------------------------
+dim           : 18446744073709551614
+self_sym_sizes: (3, 16384, 1, 1, 16)"]
+	138281143682240 -> 138281143682096
+	138281143682240 [label="TransposeBackward0
+--------------------------
+dim0:                    0
+dim1: 18446744073709551614"]
+	138281143682384 -> 138281143682240
+	138281143682384 [label="UnsqueezeBackward0
+------------------
+dim: 0"]
+	138281143682288 -> 138281143682384
+	138281143682288 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (16384, 1, 48)"]
+	138281143683152 -> 138281143682288
+	138281143683152 [label="AddBackward0
+------------
+alpha: 1"]
+	138281143683200 -> 138281143683152
+	138281143683200 [label="UnsafeViewBackward0
+---------------------------
+self_sym_sizes: (16384, 48)"]
+	138281143693568 -> 138281143683200
+	138281143693568 -> 138281039237168 [dir=none]
+	138281039237168 [label="mat2
+ (16, 48)" fillcolor=orange]
+	138281143693568 -> 138281039236608 [dir=none]
+	138281039236608 [label="self
+ (16384, 16)" fillcolor=orange]
+	138281143693568 [label="MmBackward0
+--------------------------------
+mat2            : [saved tensor]
+mat2_sym_sizes  :       (16, 48)
+mat2_sym_strides:        (1, 16)
+self            : [saved tensor]
+self_sym_sizes  :    (16384, 16)
+self_sym_strides:     (1, 16384)"]
+	138281143694144 -> 138281143693568
+	138281143694144 [label="ReshapeAliasBackward0
+------------------------------
+self_sym_sizes: (16384, 1, 16)"]
+	138281143694432 -> 138281143694144
+	138281143694432 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 0"]
+	138281143694288 -> 138281143694432
+	138281143694288 [label="TransposeBackward0
+------------------
+dim0: 1
+dim1: 2"]
+	138281143694528 -> 138281143694288
+	138281143694528 -> 138281039043040 [dir=none]
+	138281039043040 [label="input
+ (1, 16, 16384)" fillcolor=orange]
+	138281143694528 -> 138281039235328 [dir=none]
+	138281039235328 [label="result1
+ (1, 8)" fillcolor=orange]
+	138281143694528 -> 138281039237248 [dir=none]
+	138281039237248 [label="result2
+ (1, 8)" fillcolor=orange]
+	138281143694528 -> 138281143609488 [dir=none]
+	138281143609488 [label="weight
+ (16)" fillcolor=orange]
+	138281143694528 [label="NativeGroupNormBackward0
+------------------------
+C      :             16
+HxW    :          16384
+N      :              1
+eps    :          1e-05
+group  :              8
+input  : [saved tensor]
+result1: [saved tensor]
+result2: [saved tensor]
+weight : [saved tensor]"]
+	138281143689680 -> 138281143694528
+	138281143689680 [label="ViewBackward0
+---------------------------------
+self_sym_sizes: (1, 16, 128, 128)"]
+	138281143282288 -> 138281143689680
+	138281143694240 -> 138281143694528
+	138281143609488 [label="ups.2.attention_norms.0.weight
+ (16)" fillcolor=lightblue]
+	138281143609488 -> 138281143694240
+	138281143694240 [label=AccumulateGrad]
+	138281143694720 -> 138281143694528
+	138281143609328 [label="ups.2.attention_norms.0.bias
+ (16)" fillcolor=lightblue]
+	138281143609328 -> 138281143694720
+	138281143694720 [label=AccumulateGrad]
+	138281143694048 -> 138281143693568
+	138281143694048 [label=TBackward0]
+	138281143694336 -> 138281143694048
+	138281143609248 [label="ups.2.attentions.0.in_proj_weight
+ (48, 16)" fillcolor=lightblue]
+	138281143609248 -> 138281143694336
+	138281143694336 [label=AccumulateGrad]
+	138281143682864 -> 138281143683152
+	138281143609088 [label="ups.2.attentions.0.in_proj_bias
+ (48)" fillcolor=lightblue]
+	138281143609088 -> 138281143682864
+	138281143682864 [label=AccumulateGrad]
+	138281143691888 -> 138281143681424
+	138281143691888 [label="TransposeBackward0
+--------------------------
+dim0: 18446744073709551614
+dim1: 18446744073709551615"]
+	138281143682000 -> 138281143691888
+	138281143682000 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143681760 -> 138281143682000
+	138281143681760 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (16384, 1, 16)"]
+	138281143681808 -> 138281143681760
+	138281143681808 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 1
+self_sym_sizes: (3, 16384, 1, 16)"]
+	138281143681184 -> 138281143681808
+	138281143691024 -> 138281143689968
+	138281143691024 [label="TransposeBackward0
+------------------
+dim0: 0
+dim1: 1"]
+	138281143681856 -> 138281143691024
+	138281143681856 [label="ViewBackward0
+------------------------------
+self_sym_sizes: (16384, 1, 16)"]
+	138281143682480 -> 138281143681856
+	138281143682480 [label="SelectBackward0
+---------------------------------
+dim           :                 0
+index         :                 2
+self_sym_sizes: (3, 16384, 1, 16)"]
+	138281143681184 -> 138281143682480
+	138281143682672 -> 138281143280512
+	138281143682672 [label=TBackward0]
+	138281143693376 -> 138281143682672
+	138281143609008 [label="ups.2.attentions.0.out_proj.weight
+ (16, 16)" fillcolor=lightblue]
+	138281143609008 -> 138281143693376
+	138281143693376 [label=AccumulateGrad]
+	138281143280560 -> 138281143281232
+	138281143611888 [label="norm_out.weight
+ (16)" fillcolor=lightblue]
+	138281143611888 -> 138281143280560
+	138281143280560 [label=AccumulateGrad]
+	138281143281136 -> 138281143281232
+	138281143612208 [label="norm_out.bias
+ (16)" fillcolor=lightblue]
+	138281143612208 -> 138281143281136
+	138281143281136 [label=AccumulateGrad]
+	138281143280896 -> 138281143280416
+	138281143612368 [label="conv_out.weight
+ (3, 16, 3, 3)" fillcolor=lightblue]
+	138281143612368 -> 138281143280896
+	138281143280896 [label=AccumulateGrad]
+	138281143280608 -> 138281143280416
+	138281143612288 [label="conv_out.bias
+ (3)" fillcolor=lightblue]
+	138281143612288 -> 138281143280608
+	138281143280608 [label=AccumulateGrad]
+	138281143280416 -> 138281039043360
+}
