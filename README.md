@@ -4,15 +4,12 @@
 ControlNet Implementation on Mnist
 ========
 ## Project video (5min)
-<a href="https://www.youtube.com/watch?v=n6CwImm_WDI">
-   <img alt="ControlNet Tutorial" src="https://github.com/user-attachments/assets/00bcedd4-45b9-4c4f-8563-8c00589e6a08"
-   width="400">
-</a>
+Link here-
 
 ## Sample Output for ControlNet with DDPM on MNIST
 Canny Edge Control 
 
-<img src="[https://github.com/user-attachments/assets/a52c53b3-b62e-4535-affa-1ee0d0321223](https://github.com/Shaunak-Mukherjee/ControlNet-ECE570/blob/main/Output%20Canny%20Hint.png)" width="500">
+<img src="[https://github.com/user-attachments/assets/a52c53b3-b62e-4535-affa-1ee0d0321223](https://github.com/Shaunak-Mukherjee/ControlNet-ECE570/blob/main/Output%20Canny%20Hint.png)">
 
 ___
 
