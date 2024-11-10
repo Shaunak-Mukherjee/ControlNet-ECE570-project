@@ -19,38 +19,25 @@ This repository implements ControlNet in PyTorch for diffusion models using Goog
 
 
 ## Setup
-* Create a new conda environment with python 3.10 then run below commands
-*  `conda activate <environment_name>`
-* ```git clone https://github.com/explainingai-code/ControlNet-PyTorch.git```
-* ```cd ControlNet-PyTorch```
-* ```pip install -r requirements.txt```
-* Download lpips weights by opening this link in browser(dont use cURL or wget) https://github.com/richzhang/PerceptualSimilarity/blob/master/lpips/weights/v0.1/vgg.pth and downloading the raw file. Place the downloaded weights file in ```models/weights/v0.1/vgg.pth```
+In Colab create a new conda environment with python 3.10 then run below commands
+%pip install condacolab
+import condacolab
+condacolab.install()
+Next, install packages from requirements.txt.
 ___  
 
 ## Data Preparation
-### Mnist
-
-For setting up the mnist dataset follow - 
-
+### Mnist dataset found here https://www.kaggle.com/datasets/hojjatk/mnist-dataset
 Ensure directory structure is following
 ```
-ControlNet-ECE570/
-    -> data
-        -> mnist
-            -> train
-                -> images
-                    -> *.png
-            -> test
-                -> images
-                    -> *.png
-``
-
+ControlNet-ECE570/data/mnist/train/images/*/*.png
+ControlNet-ECE570/data/mnist/test/images/*/*.png
 ```
 ---
 ## Configuration
- Allows you to play with different components of ddpm and autoencoder training
-* ```config/mnist.yaml``` - Config for MNIST dataset
-* ```config/celebhq.yaml``` - Configuration used for celebhq dataset
+ Allows you to play with different components of ddpm training
+ ```config/mnist.yaml``` - Config for MNIST dataset
+
 
 <ins>Relevant configuration parameters</ins>
 
