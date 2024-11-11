@@ -5,16 +5,15 @@ ControlNet Implementation on Mnist
 ## Project video (5min)
 Link here- 
 
+
 ## Sample Output for ControlNet with DDPM on MNIST
 Canny Edge Control 
 
-![ControlNet_Cannyedge_genimage](https://github.com/user-attachments/assets/7883b187-cc46-4171-bbb5-702c49e76c8e)
-_
+image - ![ControlNet_Cannyedge_genimage](https://github.com/user-attachments/assets/7883b187-cc46-4171-bbb5-702c49e76c8e)
+video- https://github.com/Shaunak-Mukherjee/ControlNet-ECE570/blob/main/controlnet_time_evolution.mp4
 
-This repository implements ControlNet in PyTorch for diffusion models using Google Colab.
-* Training and Inference of DDPM on MNIST dataset
-* Training and Inference of ControlNet with DDPM on MNIST using canny edges
-
+This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
+Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
 
 ## Setup
 In Colab create a new conda environment with python 3.10 then run below commands
