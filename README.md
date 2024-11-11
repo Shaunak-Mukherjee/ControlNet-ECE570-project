@@ -36,7 +36,7 @@ ControlNet-ECE570/data/mnist/test/images/*/*.png
  Allows you to play with different components of ddpm training
  ```config/mnist.yaml``` - Config for MNIST dataset
 
-## Key Project File Containing ALL code is Main_mnist.ipynb
+## Key Project File Containing ALL code is - ```Main_mnist.ipynb```
 
 ___  
 ## Training
