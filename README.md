@@ -24,7 +24,8 @@ Next, install packages from requirements.txt.
 ___  
 ## Data Preparation
 ### Mnist dataset found here 
-```[https://www.kaggle.com/datasets/hojjatk/mnist-dataset](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
+```
+[https://www.kaggle.com/datasets/hojjatk/mnist-dataset](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
 ```
 Ensure directory structure is following
 ```
