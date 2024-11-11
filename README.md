@@ -10,7 +10,7 @@ Link here- https://anonymous.4open.science/r/ControlNet-ECE570-D5C5/controlnet_t
 Canny Edge Control 
 
 ![ControlNet_Cannyedge_genimage](https://github.com/user-attachments/assets/7883b187-cc46-4171-bbb5-702c49e76c8e)
-A cool time evolution video- 
+A cool time evolution video- https://anonymous.4open.science/r/ControlNet-ECE570-D5C5/controlnet_time_evolution.mp4
 
 This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
 Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
@@ -23,7 +23,9 @@ condacolab.install()
 Next, install packages from requirements.txt.
 ___  
 ## Data Preparation
-### Mnist dataset found here https://www.kaggle.com/datasets/hojjatk/mnist-dataset
+### Mnist dataset found here 
+```[https://www.kaggle.com/datasets/hojjatk/mnist-dataset](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
+```
 Ensure directory structure is following
 ```
 ControlNet-ECE570/data/mnist/train/images/*/*.png
@@ -48,8 +50,6 @@ For training and inference of ddpmon mnist,ensure the right path is mentioned in
 
 ## Output
 During training and inference of unconditional ddpm images will be saved under /ControlNet-ECE570/mnist/samples folder
-The final decoded generated image will be `x0_0.png,x0_2.png,... etc`.
-
-During training and inference of controlnet with ddpm following images will be saved:
- During training we will save the latest checkpoint in /ControlNet-ECE570/mnist/ directory
+The final decoded generated image will have file names as `x0_0.png,x0_2.png,... etc`.
+During training we will save the latest checkpoint in ``` /ControlNet-ECE570/mnist/ ``` directory
 During sampling, randomly selected hints and generated samples will be saved in ```/ControlNet-ECE570/mnist//hint.png``` and  ```/ControlNet-ECE570/mnist/controlnet_samples/*.png```. The final decoded generated image will be `x0_0.png,x0_2.png,... etc`.
