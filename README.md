@@ -1,4 +1,4 @@
-# ControlNet-ECE570 Reimplementation of ControlNet for ECE570 term project
+# ECE570 term project
 
 ControlNet Implementation on Mnist
 ========
