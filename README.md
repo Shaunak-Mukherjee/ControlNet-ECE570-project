@@ -2,8 +2,8 @@
 
 ControlNet Implementation on Mnist
 ========
-## Project video (5min)
-Link here- https://anonymous.4open.science/r/ControlNet-ECE570-D5C5/controlnet_time_evolution.mp4
+## Project Demo video - https://drive.google.com/file/d/1aLxfUSYyN0vR6g1pNwnFu1FsNjwPRLze/view?usp=sharing
+
 
 
 ## Sample Output for ControlNet with DDPM on MNIST
