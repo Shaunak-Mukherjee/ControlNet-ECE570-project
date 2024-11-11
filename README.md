@@ -58,4 +58,4 @@ The final decoded generated image will have file names as `x0_0.png,x0_2.png,...
 During training we will save the latest checkpoint in ``` /ControlNet-ECE570/mnist/ ``` directory
 During sampling, randomly selected hints and generated samples will be saved in ```/ControlNet-ECE570/mnist//hint.png``` and  ```/ControlNet-ECE570/mnist/controlnet_samples/*.png```. The final decoded generated image will be `x0_0.png,x0_2.png,... etc`.
 
-Acknowledgement: https://github.com/lllyasviel/ControlNet and https://github.com/explainingai-code/ControlNet-PyTorch 
+
