@@ -10,6 +10,8 @@ Link here- https://anonymous.4open.science/r/ControlNet-ECE570-D5C5/controlnet_t
 Canny Edge Control 
 ![ControlNet_Cannyedge_genimage](https://github.com/user-attachments/assets/7883b187-cc46-4171-bbb5-702c49e76c8e)
 
+https://github.com/Shaunak-Mukherjee/ControlNet-ECE570/blob/main/ControlNet_Cannyedge_genimage.png 
+
 A cool time evolution video- ```https://anonymous.4open.science/r/ControlNet-ECE570-D5C5/controlnet_time_evolution.mp4```
 
 This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
