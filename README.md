@@ -9,7 +9,8 @@ Link here-
 ## Sample Output for ControlNet with DDPM on MNIST
 Canny Edge Control 
 
-<img src="[https://github.com/user-attachments/assets/a52c53b3-b62e-4535-affa-1ee0d0321223](https://github.com/Shaunak-Mukherjee/ControlNet-ECE570/blob/main/Output%20Canny%20Hint.png)">
+
+![ControlNet_Cannyedge_genimage](https://github.com/user-attachments/assets/7883b187-cc46-4171-bbb5-702c49e76c8e)
 
 ___
 
