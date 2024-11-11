@@ -35,6 +35,9 @@ ControlNet-ECE570/data/mnist/test/images/*/*.png
 ## Configuration
  Allows you to play with different components of ddpm training
  ```config/mnist.yaml``` - Config for MNIST dataset
+
+## Key Project File Containing ALL code is Main_mnist.ipynb
+
 ___  
 ## Training
 The repo's MNist Colab file provides training and inference for Mnist(Unconditional DDPM) and ControlNet with both these variations using canny edges.
