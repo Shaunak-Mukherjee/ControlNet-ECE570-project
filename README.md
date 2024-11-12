@@ -14,7 +14,7 @@ A cool time evolution video- https://anonymous.4open.science/r/ControlNet-ECE570
 This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
 Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
 
-## Key Project File Containing ALL code is - ```Main_mnist.ipynb```. 
+## Key Project File Containing ALL code is - ```Main_mnist.ipynb (if you are using firefox) or Main_mnist_copy.ipynb (for chrome and safari)```. 
 This file have step by step instruction that simply needs to be executed. 
 
 ## Setup
