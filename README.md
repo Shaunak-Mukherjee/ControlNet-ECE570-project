@@ -2,6 +2,7 @@
 
 ControlNet Implementation on Mnist
 Demo video - https://drive.google.com/file/d/1aLxfUSYyN0vR6g1pNwnFu1FsNjwPRLze/view?usp=sharing
+
 This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
 Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
 
