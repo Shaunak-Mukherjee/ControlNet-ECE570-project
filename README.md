@@ -1,7 +1,6 @@
 # ECE570 term project
 
-ControlNet Implementation on Mnist
-This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
+ControlNet Implementation on MNIST Dataset. This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
 Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
 
 
