@@ -93,22 +93,9 @@ Check ’em out and flex your synthetic digits! 😉
 
 ---
 
-## 🤝 Contributing
-
-Love it? Spot a bug? PRs & issues are welcome! Let’s collab. 💡
-
----
-
-## 📄 License
-
-MIT © 2025 Shaunak Mukherjee
-
----
-
 ## 📬 Contact
 
 Shaunak Mukherjee – (https://www.linkedin.com/in/shaunakmukherjee/)
-_P.S. Replace above with your real email so folks can reach you!_  
 
 ---
 
