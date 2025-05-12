@@ -21,8 +21,7 @@ Everything’s wrapped in a Colab notebook (`Main_mnist.ipynb`) with step‑by�
 ├── data/
 │   └── mnist/
 │       ├── train/images    #   <– put your Kaggle MNIST here
-│       └── test/images
-├── mnist/                  # helper scripts (if any)
+│       └── test/images                
 ├── Main_mnist.ipynb        # 🎓 Colab tutorial & all-in-one notebook
 ├── requirements.txt        # pip deps
 ├── ControlNet_Cannyedge_genimage.png  # sample output
