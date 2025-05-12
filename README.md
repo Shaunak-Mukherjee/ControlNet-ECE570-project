@@ -107,7 +107,7 @@ MIT © 2025 Shaunak Mukherjee
 
 ## 📬 Contact
 
-Shaunak Mukherjee – shaunak.mukherjee@yourdomain.com  
+Shaunak Mukherjee – (https://www.linkedin.com/in/shaunakmukherjee/)
 _P.S. Replace above with your real email so folks can reach you!_  
 
 ---
