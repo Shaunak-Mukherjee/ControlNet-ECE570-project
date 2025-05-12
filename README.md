@@ -1,57 +1,115 @@
-# ECE570 term project
+# ControlNet ECE570 Project 🚀
 
-ControlNet Implementation on MNIST Dataset. This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
-Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
+> A PyTorch‑powered ControlNet implementation on MNIST for ECE 570 final term.  
+> Unconditional DDPM baseline + ControlNet conditioning on Canny edges.  
 
-
-# Sample Output for ControlNet with DDPM on MNIST
-Canny Edge Control https://github.com/Shaunak-Mukherjee/ControlNet-ECE570/blob/main/ControlNet_Cannyedge_genimage.png
-![ControlNet_Cannyedge_genimage](https://github.com/user-attachments/assets/7883b187-cc46-4171-bbb5-702c49e76c8e)
-A cool time evolution video- https://anonymous.4open.science/r/ControlNet-ECE570-D5C5/controlnet_time_evolution.mp4
-This repository implements ControlNet in PyTorch for diffusion models using Google Colab. 
-Training and Inference of DDPM on MNIST dataset and training and Inference of ControlNet with DDPM on MNIST using canny edges.
-
-Key Project File Containing ALL code is - `Main_mnist.ipynb'
-This file have step by step instruction that simply needs to be executed. 
-
-# Setup
-In Colab create a new conda environment with python 3.10 then run below commands
-%pip install condacolab
-import condacolab
-condacolab.install()
-Next, install packages from requirements.txt.
-___  
-# Data Preparation
-# Mnist dataset found here 
-[https://www.kaggle.com/datasets/hojjatk/mnist-dataset](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv)
-
-Ensure directory structure is following
-```
-ControlNet-ECE570/data/mnist/train/images/*/*.png
-ControlNet-ECE570/data/mnist/test/images/*/*.png
-```
 ---
-# Configuration
- Allows you to play with different components of ddpm training
- ```config/mnist.yaml``` - Config for MNIST dataset
 
-___  
-# Training
-The repo's MNist Colab file provides training and inference for Mnist(Unconditional DDPM) and ControlNet with both these variations using canny edges.
+## 🔍 Overview
+This is my final term project for _ECE 570_—we dive into diffusion models by:
+1. Training an **Unconditional DDPM** on MNIST  
+2. Extending it with **ControlNet** that uses Canny‑edge hints  
 
-Once the config and dataset is setup:
-For training and inference of Unconditional DDPM and for training and inference of ControlNet with Unconditional DDPM please follow, Colab file codeblocks.
+Everything’s wrapped in a Colab notebook (`Main_mnist.ipynb`) with step‑by‑step cells. Let’s get those 🔥 handwritten digits!
 
-# Training Unconditional DDPM
-For training and inference of ddpmon mnist, ensure the right path is mentioned in `mnist.yaml` and simply follow the Colab code blocks.
+---
 
-# Training ControlNet on Unconditional DDPM with Canny Hint Image
-For training and inference of ddpmon mnist,ensure the right path is mentioned in `mnist.yaml` and simply follow the Colab code blocks
+## 📁 Directory Structure
+```
+├── config/
+│   └── mnist.yaml          # DDPM + ControlNet hyperparams
+├── data/
+│   └── mnist/
+│       ├── train/images    #   <– put your Kaggle MNIST here
+│       └── test/images
+├── mnist/                  # helper scripts (if any)
+├── Main_mnist.ipynb        # 🎓 Colab tutorial & all-in-one notebook
+├── requirements.txt        # pip deps
+├── ControlNet_Cannyedge_genimage.png  # sample output
+├── controlnet_time_evolution.mp4      # cool time‑evo vid
+├── ECE570_final_term_paper_ControlNet-ECE570-D5C5_v3.pdf  # report
+└── unet_model_graph.png    # U‑Net arch diagram
+```
 
-# Output
-During training and inference of unconditional ddpm images will be saved under /ControlNet-ECE570/mnist/samples folder
-The final decoded generated image will have file names as `x0_0.png,x0_2.png,... etc`.
-During training we will save the latest checkpoint in ``` /ControlNet-ECE570/mnist/ ``` directory
-During sampling, randomly selected hints and generated samples will be saved in ```/ControlNet-ECE570/mnist//hint.png``` and  ```/ControlNet-ECE570/mnist/controlnet_samples/*.png```. The final decoded generated image will be `x0_0.png,x0_2.png,... etc`.
+---
 
+## ⚙️ Installation
 
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/Shaunak-Mukherjee/ControlNet-ECE570-project.git
+   cd ControlNet-ECE570-project
+   ```
+2. **(Colab only) Set up Conda**  
+   ```python
+   %pip install condacolab
+   import condacolab
+   condacolab.install()
+   ```
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 📦 Data Preparation
+
+1. Download MNIST from [Kaggle: hojjatk/mnist-dataset][kaggle-mnist].  
+2. Organize files as:
+   ```
+   data/mnist/train/images/*/*.png
+   data/mnist/test/images/*/*.png
+   ```
+
+---
+
+## 🔧 Configuration
+
+Tweaks for model size, learning rate, timesteps, etc., live in `config/mnist.yaml`. Play around to see how your samples change! 😎
+
+---
+
+## 🎬 Usage
+
+1. Open **Main_mnist.ipynb** in Google Colab.  
+2. Run cells in order:
+   - Install & import libs  
+   - Load + preprocess MNIST  
+   - Train **Unconditional DDPM**  
+   - Train **ControlNet** (Canny‑edge hints)  
+   - Sample & visualize results  
+
+All generated images & checkpoints will be dumped under `mnist/samples/` & `mnist/` folders.
+
+---
+
+## 🌟 Results
+
+- **Canny‑edge control samples** ➡️ `ControlNet_Cannyedge_genimage.png`  
+- **Time‑evolution video** ➡️ `controlnet_time_evolution.mp4`  
+
+Check ’em out and flex your synthetic digits! 😉
+
+---
+
+## 🤝 Contributing
+
+Love it? Spot a bug? PRs & issues are welcome! Let’s collab. 💡
+
+---
+
+## 📄 License
+
+MIT © 2025 Shaunak Mukherjee
+
+---
+
+## 📬 Contact
+
+Shaunak Mukherjee – shaunak.mukherjee@yourdomain.com  
+_P.S. Replace above with your real email so folks can reach you!_  
+
+---
+
+[kaggle-mnist]: https://www.kaggle.com/datasets/hojjatk/mnist-dataset
